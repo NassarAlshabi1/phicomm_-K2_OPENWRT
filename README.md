@@ -8,6 +8,37 @@
 
 A template for building OpenWrt with GitHub Actions
 
+## 📥 Firmware Download
+
+Ready-to-flash OpenWrt firmware for the **Phicomm K2 (MT7620)** router — AMMAN edition:
+
+| Item | Details |
+| --- | --- |
+| Device | Phicomm K2 |
+| Target / SoC | ramips / MediaTek MT7620 |
+| OpenWrt Version | 23.05.0A |
+| Kernel | Linux 5.15.134 |
+| Build | v22.4-AMMAN (build 011243) |
+| File Size | 7.06 MB (7,406,413 bytes) |
+| SHA256 | `25e35108910a9d98707af35e105dfc636346d66839e50318122c6d358373a2df` |
+
+**Direct download:**
+
+[`openwrt-23.05.0A-ramips-mt7620-phicomm_k2-v22.4-AMMAN-_011243.bin`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/download/v22.4-AMMAN/openwrt-23.05.0A-ramips-mt7620-phicomm_k2-v22.4-AMMAN-_011243.bin)
+
+The file is also stored in the [`firmware/`](firmware/) directory of this repository. All releases are available on the [Releases](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases) page.
+
+## ⚡ Installation
+
+1. Download the firmware `.bin` file from the link above.
+2. Verify the SHA256 checksum after downloading (see table above).
+3. Flash it via LuCI: `System → Backup / Flash Firmware → Upload firmware...`
+   - When coming from stock firmware, do **not** keep settings.
+4. Or flash via SSH/CLI: `sysupgrade -v /tmp/<firmware-name>.bin`
+5. Wait for the router to reboot into OpenWrt.
+
+> ⚠️ **Warning:** Flashing the wrong firmware can brick your router. Make sure your device is the **Phicomm K2 (MT7620-based, ramips target)** before flashing.
+
 ## Usage
 
 - Click the [Use this template](https://github.com/P3TERX/Actions-OpenWrt/generate) button to create a new repository.
