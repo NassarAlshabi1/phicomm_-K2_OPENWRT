@@ -10,13 +10,6 @@
 # See /LICENSE for more information.
 #
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
-
-# Add a feed source (only if not already present)
-# NOTE: lede master now includes the helloworld feed by default in
-# feeds.conf.default, so appending it again breaks `feeds update -a`
-# with "Duplicate feed name" (exit code 25).
-grep -q '^src-git helloworld' feeds.conf.default || \
-    echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
-#echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+# No custom feed sources are needed for this build:
+# official OpenWrt 24.10 feeds already provide
+# kmod-batman-adv, batctl and wpad-mesh-mbedtls.
