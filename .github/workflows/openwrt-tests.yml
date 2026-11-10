@@ -1,0 +1,55 @@
+#
+# OpenWrt Configuration Tests
+#
+# Three-layer CI for the Phicomm K2 (Floor1 mesh) build:
+#   1. Shell syntax        - sh -n / bash -n
+#   2. Static analysis     - ShellCheck
+#   3. Configuration tests - tests/static-checks.sh
+#
+# Runs automatically on every push to main, on pull requests,
+# and can be triggered manually from the Actions page.
+
+name: OpenWrt Configuration Tests
+
+on:
+  push:
+    branches: ["main"]
+  pull_request:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    name: Floor1 Script Validation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install ShellCheck
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq shellcheck
+
+      - name: Check shell syntax
+        run: |
+          sh -n files/etc/uci-defaults/99-mesh-floor1
+          sh -n tests/static-checks.sh
+          bash -n diy-part1.sh
+          bash -n diy-part2.sh
+
+      - name: Run ShellCheck
+        run: |
+          shellcheck -s sh files/etc/uci-defaults/99-mesh-floor1
+          shellcheck -s sh tests/static-checks.sh
+          shellcheck -s bash diy-part1.sh
+          shellcheck -s bash diy-part2.sh
+
+      - name: Run configuration tests
+        run: |
+          chmod +x tests/static-checks.sh
+          ./tests/static-checks.sh
