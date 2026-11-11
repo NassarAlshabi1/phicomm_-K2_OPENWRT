@@ -30,10 +30,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Install ShellCheck
+      - name: Install ShellCheck (pinned v0.10.0)
         run: |
-          sudo apt-get update -qq
-          sudo apt-get install -y -qq shellcheck
+          sc_ver=0.10.0
+          curl -sL "https://github.com/koalaman/shellcheck/releases/download/v${sc_ver}/shellcheck-v${sc_ver}.linux.x86_64.tar.xz" -o /tmp/sc.tar.xz
+          tar -xf /tmp/sc.tar.xz -C /tmp
+          sudo install -m 0755 /tmp/shellcheck-v${sc_ver}/shellcheck /usr/local/bin/shellcheck
+          shellcheck --version
 
       - name: Check shell syntax
         run: |
