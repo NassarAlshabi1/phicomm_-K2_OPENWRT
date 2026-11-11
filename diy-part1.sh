@@ -11,5 +11,6 @@
 #
 
 # No custom feed sources are needed for this build:
-# official OpenWrt 24.10 feeds already provide
-# kmod-batman-adv, batctl and wpad-mesh-mbedtls.
+# the official OpenWrt v23.05.6 feeds (routing feed provides
+# kmod-batman-adv and batctl, core provides wpad-mesh-mbedtls)
+# are already pinned to the exact 23.05.6 release commits.

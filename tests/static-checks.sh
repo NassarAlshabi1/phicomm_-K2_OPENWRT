@@ -186,7 +186,7 @@ forbid "$SCRIPT" "mesh encryption must never be 'none'" -F "MESH_SECTION\".encry
 echo
 echo "--- firmware build config: $CONFIG ---"
 
-expect "$CONFIG" "target device is Phicomm K2 v22.5 (ramips/mt7620)" -F "CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_k2-v22.5=y"
+expect "$CONFIG" "target device is Phicomm K2 v22.4 (ramips/mt7620)" -F "CONFIG_TARGET_ramips_mt7620_DEVICE_phicomm_k2-v22.4=y"
 expect "$CONFIG" "kmod-batman-adv selected" -F "CONFIG_PACKAGE_kmod-batman-adv=y"
 expect "$CONFIG" "BATMAN_V compiled in" -F "CONFIG_BATMAN_ADV_BATMAN_V=y"
 expect "$CONFIG" "BLA compiled in" -F "CONFIG_BATMAN_ADV_BLA=y"

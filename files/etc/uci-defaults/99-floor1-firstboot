@@ -2,7 +2,7 @@
 # shellcheck disable=SC3043,SC2317,SC2329,SC2015
 # =========================================================
 # FLOOR1 - FIRST BOOT CONFIGURATION
-# OpenWrt 24.10 | Phicomm K2 v22.5 (MT7620A + 5GHz radio)
+# OpenWrt 23.05.6 | Phicomm K2 v22.4 (MT7620A + 5GHz radio)
 #
 # Wireless Mesh + BATMAN-ADV + LAN Bridge
 # OPTIMIZED FOR MAX THROUGHPUT & COVERAGE
