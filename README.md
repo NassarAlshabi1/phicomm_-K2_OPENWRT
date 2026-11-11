@@ -11,52 +11,49 @@ Custom OpenWrt firmware for the **Phicomm K2 (MediaTek MT7620A)** router, built 
 
 All builds are available on the [Releases](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases) page.
 
-### Current build — v22.5 Mesh Node (Floor1)
+### Current build — v22.5 Mesh Node (Floor1) — BATMAN_V
 
 | Item | Details |
 | --- | --- |
 | Device profile | Phicomm K2 **v22.5 and newer** |
 | Target / SoC | ramips / MediaTek MT7620A @ 580 MHz |
 | OpenWrt version | 24.10 (r29306-34fa4b1af5), Linux 6.6 |
-| Mesh | batman-adv 2024.3 — **BATMAN_IV + BLA**, 802.11s + **WPA3-SAE** |
-| Management IP | `10.0.0.245` (DHCP off — the MikroTik gateway serves the network) |
+| Mesh | batman-adv 2024.3 — **BATMAN_V + BLA + DAT + multicast**, 802.11s on **5GHz channel 44 / VHT80**, WPA3-SAE, mesh ID `M87986` |
+| Client APs | `✨ADEN-NET✨-5G` (5GHz) + `✨ADEN-NET✨-4G` (2.4GHz, ch6/HT20) — open, client isolation, 802.11k/v |
+| Management IP | `10.0.0.8/16`, gateway `10.0.0.1` (DHCP off — the MikroTik gateway serves the network) |
+| Extras | STP on `br-lan`, scheduled reboot every 6 hours, hostname `Floor1` |
 | File | `openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin` (6.56 MB / 6,882,092 bytes) |
-| SHA256 | `0365d35603a76cc876c907e65c84311bb78ba3c56c70ead80d3a66256929817a` |
+| SHA256 | `32d5b6d1853cb75a1734751e75736ffd8a2813e644037a1e3be373bbdd1e1828` |
 
-**Direct download:** [`openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/download/2026.11.10-0914/openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin)
+**Direct download:** [`openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/download/2026.11.12-0441/openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin)
 
 An `initramfs-kernel.bin` image is attached to the same release for a **temporary test boot** (nothing is written to flash).
 
-Included packages: LuCI, `kmod-batman-adv`, `batctl`, `wpad-mesh-mbedtls`, `iw`.
+Included packages: LuCI, `kmod-batman-adv` (BATMAN_V/BLA/DAT/MCAST), `batctl`, `wpad-mesh-mbedtls`, `iw`.
 
-On **first boot** the firmware automatically applies [`files/etc/uci-defaults/99-mesh-floor1`](files/etc/uci-defaults/99-mesh-floor1):
+On **first boot** the firmware automatically applies [`files/etc/uci-defaults/99-floor1-firstboot`](files/etc/uci-defaults/99-floor1-firstboot) (based on the owner's `firstboot-phicomm-k2.sh`):
 
-- radio0 → 802.11s mesh on **channel 1 / HT20**, mesh ID `M87986`, protected with WPA3-SAE
-- `bat0` (BATMAN_IV + BLA) bridged into `br-lan` with STP enabled
-- LAN IP `10.0.0.245/24`, DHCP server disabled (the MikroTik gateway is the DHCP server)
+- 5GHz radio → 802.11s mesh backhaul on **channel 44 / VHT80**, mesh ID `M87986`, WPA3-SAE (PMF required)
+- both radios also serve open client APs `✨ADEN-NET✨-5G` / `✨ADEN-NET✨-4G` (2.4GHz on ch6/HT20) with client isolation; the stock `OpenWrt` APs are removed
+- `bat0` (BATMAN_V + BLA + DAT + multicast mode) bridged into `br-lan` with STP enabled
+- LAN IP `10.0.0.8/16`, default gateway and DNS `10.0.0.1`, DHCP server disabled (the MikroTik gateway is the DHCP server)
+- Scheduled reboot every 6 hours (cron)
 
-> 🔑 **First login — change the mesh key** (a placeholder ships in the image):
-> ```sh
-> uci set wireless.mesh0.key='YOUR_REAL_KEY'
-> uci commit wireless && wifi
-> ```
+> 🔑 **Security — read before deploying:**
+> - The mesh key is baked into this **public** repository and image. Change it after first login:
+>   ```sh
+>   uci set wireless.wifinet2.key='YOUR_REAL_KEY'
+>   uci commit wireless && wifi
+>   ```
+> - **BATMAN_V must match on every mesh node**, including the MikroTik gateway — nodes running BATMAN_IV will not peer with it.
+> - The client APs are intentionally open (`encryption none`) with client isolation — anyone in range can associate.
 
 > ⚠️ **Hardware version warning:** this image is for K2 **v22.5 and newer** hardware. Flashing it on v22.4 or older hardware can **brick** the router (different flash layout). Check the version sticker on the bottom of the router before flashing.
 
-### Previous build — v22.4-AMMAN (OpenWrt 23.05.0A)
+### Superseded builds
 
-| Item | Details |
-| --- | --- |
-| Device | Phicomm K2 (v22.4 and older) |
-| Target / SoC | ramips / MediaTek MT7620 |
-| OpenWrt Version | 23.05.0A, Linux 5.15.134 |
-| Build | v22.4-AMMAN (build 011243) |
-| File Size | 7.06 MB (7,406,413 bytes) |
-| SHA256 | `25e35108910a9d98707af35e105dfc636346d66839e50318122c6d358373a2df` |
-
-**Direct download:** [`openwrt-23.05.0A-ramips-mt7620-phicomm_k2-v22.4-AMMAN-_011243.bin`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/download/v22.4-AMMAN/openwrt-23.05.0A-ramips-mt7620-phicomm_k2-v22.4-AMMAN-_011243.bin)
-
-The file is also stored in the [`firmware/`](firmware/) directory of this repository.
+- [`2026.11.10-0914`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/tag/2026.11.10-0914) — same device, BATMAN_IV mesh on 2.4GHz, no client APs, management IP `10.0.0.245`. Replaced by the build above.
+- [`v22.4-AMMAN`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/tag/v22.4-AMMAN) — OpenWrt 23.05.0A for K2 **v22.4 and older**, no mesh (sha256 `25e35108910a9d98707af35e105dfc636346d66839e50318122c6d358373a2df`). Also stored in the [`firmware/`](firmware/) directory.
 
 ## ⚡ Installation
 
@@ -64,7 +61,7 @@ The file is also stored in the [`firmware/`](firmware/) directory of this reposi
 2. Coming from **stock firmware**: flash via the OEM upgrade page (do **not** keep settings).
    Coming from **OpenWrt**: `System → Backup / Flash Firmware` or `sysupgrade -v /tmp/<firmware-name>.bin` without keeping settings.
 3. Prefer to test first? Boot the `initramfs` image once — it runs entirely from RAM.
-4. After the reboot the router is mesh node **Floor1** — reach LuCI at `http://10.0.0.245` from the gateway side of the mesh.
+4. After the reboot the router is mesh node **Floor1** — reach LuCI at `http://10.0.0.8` from the gateway side of the mesh.
 5. Change the mesh key (see above), then join the 802.11s mesh from the MikroTik gateway with the same SAE key.
 
 > ⚠️ **Warning:** Flashing the wrong firmware can brick your router. Make sure the device is the **Phicomm K2 (MT7620-based, ramips target)** and that the image matches your hardware version **before** flashing.
@@ -77,11 +74,11 @@ Every push to `main`, every pull request, and manual runs validate the Floor1 fi
 | --- | --- | --- |
 | 1. Shell syntax | the scripts parse as valid POSIX/bash shell | `sh -n` / `bash -n` |
 | 2. Static analysis | catches bugs, quoting errors and bad practice | ShellCheck |
-| 3. Configuration tests | BATMAN_IV + BLA, mesh ID `M87986`, WPA3-SAE, fixed channel 1/HT20, bat0↔br-lan bridging with STP, management IP, DHCP disabled, and all essential packages still present in `.config` | [`tests/static-checks.sh`](tests/static-checks.sh) |
+| 3. Configuration tests | BATMAN_V + BLA/DAT/multicast, mesh ID `M87986` on 5GHz ch44/VHT80, WPA3-SAE, both Aden-Net APs, bat0↔br-lan bridging with STP, management IP/gateway, DHCP disabled, cron reboot, and all essential packages still present in `.config` | [`tests/static-checks.sh`](tests/static-checks.sh) |
 
 Files involved:
 
-- [`tests/static-checks.sh`](tests/static-checks.sh) — layer 3 test suite (~35 checks)
+- [`tests/static-checks.sh`](tests/static-checks.sh) — layer 3 test suite (91 checks)
 - [`.github/workflows/openwrt-tests.yml`](.github/workflows/openwrt-tests.yml) — the CI pipeline
 
 These are **static** tests: they prove the configuration is internally consistent, not that the mesh actually forwards traffic. Real mesh connectivity between floors is verified on the hardware itself (`batctl p`, `batctl n`, ping through `bat0`).
