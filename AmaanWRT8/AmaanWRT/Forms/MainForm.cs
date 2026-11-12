@@ -3545,7 +3545,7 @@ public class MainForm : Form
                 ((Control)field_204).Text = "نوع سوفت الأوبن ورت";
                 field_204.TextLocation = new Point(100, 5);
                 ((Control)field_327).AutoSize = true;
-                ((Control)field_327).Font = new Font("Tahoma", 7f);
+                ((Control)field_327).Font = UiFonts.Create(8.5f);
                 ((Control)field_327).ForeColor = Color.Black;
                 ((Control)field_327).Location = new Point(9, 118);
                 ((Control)field_327).Name = "RB_Soft_KT10000";
@@ -3556,7 +3556,7 @@ public class MainForm : Form
                 ((ButtonBase)field_327).UseVisualStyleBackColor = true;
                 field_327.CheckedChanged += method_375;
                 ((Control)field_214).AutoSize = true;
-                ((Control)field_214).Font = new Font("Tahoma", 7f);
+                ((Control)field_214).Font = UiFonts.Create(8.5f);
                 ((Control)field_214).ForeColor = Color.Black;
                 ((Control)field_214).Location = new Point(122, 179);
                 ((Control)field_214).Name = "radioButton1";
@@ -3567,7 +3567,7 @@ public class MainForm : Form
                 ((ButtonBase)field_214).UseVisualStyleBackColor = true;
                 field_214.CheckedChanged += method_374;
                 ((Control)field_215).AutoSize = true;
-                ((Control)field_215).Font = new Font("Tahoma", 7f);
+                ((Control)field_215).Font = UiFonts.Create(8.5f);
                 ((Control)field_215).ForeColor = Color.Black;
                 ((Control)field_215).Location = new Point(114, 118);
                 ((Control)field_215).Name = "RB_Soft_KT704";
@@ -3578,7 +3578,7 @@ public class MainForm : Form
                 ((ButtonBase)field_215).UseVisualStyleBackColor = true;
                 field_215.CheckedChanged += method_375;
                 ((Control)field_216).AutoSize = true;
-                ((Control)field_216).Font = new Font("Tahoma", 7f);
+                ((Control)field_216).Font = UiFonts.Create(8.5f);
                 ((Control)field_216).ForeColor = Color.Black;
                 ((Control)field_216).Location = new Point(7, 179);
                 ((Control)field_216).Name = "RB_Soft_WA350";
@@ -3590,7 +3590,7 @@ public class MainForm : Form
                 field_216.CheckedChanged += method_375;
                 ((Control)field_217).AutoSize = true;
                 field_217.Checked = true;
-                ((Control)field_217).Font = new Font("Segoe UI", 8f, (FontStyle)1);
+                ((Control)field_217).Font = UiFonts.Create(8f, (FontStyle)1);
                 ((Control)field_217).ForeColor = Color.Maroon;
                 ((Control)field_217).Location = new Point(29, 36);
                 ((Control)field_217).Name = "RB_Amaan";
@@ -3602,7 +3602,7 @@ public class MainForm : Form
                 ((ButtonBase)field_217).UseVisualStyleBackColor = true;
                 field_217.CheckedChanged += method_373;
                 ((Control)field_218).AutoSize = true;
-                ((Control)field_218).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_218).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_218).ForeColor = Color.Maroon;
                 ((Control)field_218).Location = new Point(23, 198);
                 ((Control)field_218).Name = "RB_Soft_OTHER_DUAL";
@@ -3613,7 +3613,7 @@ public class MainForm : Form
                 ((ButtonBase)field_218).UseVisualStyleBackColor = true;
                 field_218.CheckedChanged += method_375;
                 ((Control)field_219).AutoSize = true;
-                ((Control)field_219).Font = new Font("Tahoma", 7f);
+                ((Control)field_219).Font = UiFonts.Create(8.5f);
                 ((Control)field_219).ForeColor = Color.Black;
                 ((Control)field_219).Location = new Point(31, 159);
                 ((Control)field_219).Name = "M2XW";
@@ -3624,7 +3624,7 @@ public class MainForm : Form
                 ((ButtonBase)field_219).UseVisualStyleBackColor = true;
                 field_219.CheckedChanged += method_374;
                 ((Control)field_220).AutoSize = true;
-                ((Control)field_220).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_220).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_220).ForeColor = Color.Maroon;
                 ((Control)field_220).Location = new Point(130, 198);
                 ((Control)field_220).Name = "RB_Soft_OTHER";
@@ -3635,7 +3635,7 @@ public class MainForm : Form
                 ((ButtonBase)field_220).UseVisualStyleBackColor = true;
                 field_220.CheckedChanged += method_374;
                 ((Control)field_221).AutoSize = true;
-                ((Control)field_221).Font = new Font("Tahoma", 7f);
+                ((Control)field_221).Font = UiFonts.Create(8.5f);
                 ((Control)field_221).ForeColor = Color.Black;
                 ((Control)field_221).Location = new Point(128, 159);
                 ((Control)field_221).Name = "RB_Soft_M2XM";
@@ -3646,7 +3646,7 @@ public class MainForm : Form
                 ((ButtonBase)field_221).UseVisualStyleBackColor = true;
                 field_221.CheckedChanged += method_374;
                 ((Control)field_222).AutoSize = true;
-                ((Control)field_222).Font = new Font("Tahoma", 7f);
+                ((Control)field_222).Font = UiFonts.Create(8.5f);
                 ((Control)field_222).ForeColor = Color.Black;
                 ((Control)field_222).Location = new Point(133, 59);
                 ((Control)field_222).Name = "RB_Soft_K2P";
@@ -3658,7 +3658,7 @@ public class MainForm : Form
                 ((ButtonBase)field_222).UseVisualStyleBackColor = true;
                 field_222.CheckedChanged += method_375;
                 ((Control)field_223).AutoSize = true;
-                ((Control)field_223).Font = new Font("Tahoma", 7f);
+                ((Control)field_223).Font = UiFonts.Create(8.5f);
                 ((Control)field_223).ForeColor = Color.Black;
                 ((Control)field_223).Location = new Point(115, 78);
                 ((Control)field_223).Name = "RB_Soft_K6";
@@ -3669,7 +3669,7 @@ public class MainForm : Form
                 ((ButtonBase)field_223).UseVisualStyleBackColor = true;
                 field_223.CheckedChanged += method_375;
                 ((Control)field_224).AutoSize = true;
-                ((Control)field_224).Font = new Font("Tahoma", 7f);
+                ((Control)field_224).Font = UiFonts.Create(8.5f);
                 ((Control)field_224).ForeColor = Color.Black;
                 ((Control)field_224).Location = new Point(19, 139);
                 ((Control)field_224).Name = "RB_Soft_CPE210";
@@ -3680,7 +3680,7 @@ public class MainForm : Form
                 ((ButtonBase)field_224).UseVisualStyleBackColor = true;
                 field_224.CheckedChanged += method_374;
                 ((Control)field_225).AutoSize = true;
-                ((Control)field_225).Font = new Font("Tahoma", 7f);
+                ((Control)field_225).Font = UiFonts.Create(8.5f);
                 ((Control)field_225).ForeColor = Color.Black;
                 ((Control)field_225).Location = new Point(114, 139);
                 ((Control)field_225).Name = "RB_Soft_CPE220";
@@ -3691,7 +3691,7 @@ public class MainForm : Form
                 ((ButtonBase)field_225).UseVisualStyleBackColor = true;
                 field_225.CheckedChanged += method_374;
                 ((Control)field_226).AutoSize = true;
-                ((Control)field_226).Font = new Font("Tahoma", 7f);
+                ((Control)field_226).Font = UiFonts.Create(8.5f);
                 ((Control)field_226).ForeColor = Color.Black;
                 ((Control)field_226).Location = new Point(44, 59);
                 ((Control)field_226).Name = "RB_Soft_K2";
@@ -3703,7 +3703,7 @@ public class MainForm : Form
                 ((ButtonBase)field_226).UseVisualStyleBackColor = true;
                 field_226.CheckedChanged += method_375;
                 ((Control)field_227).AutoSize = true;
-                ((Control)field_227).Font = new Font("Tahoma", 7f);
+                ((Control)field_227).Font = UiFonts.Create(8.5f);
                 ((Control)field_227).ForeColor = Color.Black;
                 ((Control)field_227).Location = new Point(19, 98);
                 ((Control)field_227).Name = "RB_Soft_KT708";
@@ -3714,7 +3714,7 @@ public class MainForm : Form
                 ((ButtonBase)field_227).UseVisualStyleBackColor = true;
                 field_227.CheckedChanged += method_375;
                 ((Control)field_228).AutoSize = true;
-                ((Control)field_228).Font = new Font("Tahoma", 7f);
+                ((Control)field_228).Font = UiFonts.Create(8.5f);
                 ((Control)field_228).ForeColor = Color.Black;
                 ((Control)field_228).Location = new Point(114, 98);
                 ((Control)field_228).Name = "RB_Soft_KT412";
@@ -3751,7 +3751,7 @@ public class MainForm : Form
                 field_206.FocusedBaseColor = Color.White;
                 field_206.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_206.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_206).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_206).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_206).ForeColor = Color.Black;
                 ((Control)field_206).Location = new Point(14, 9);
                 ((Control)field_206).Name = "textBoxIP";
@@ -3796,7 +3796,7 @@ public class MainForm : Form
                 ((Control)field_306).TabIndex = 71;
                 ((Control)field_306).Click += method_402;
                 ((Control)field_304).BackColor = Color.Brown;
-                ((Control)field_304).Font = new Font("Segoe UI", 9f);
+                ((Control)field_304).Font = UiFonts.Create(9f);
                 ((Control)field_304).ForeColor = Color.Maroon;
                 ((Control)field_304).Location = new Point(4, 9);
                 ((Control)field_304).Margin = new Padding(2, 0, 2, 0);
@@ -3813,7 +3813,7 @@ public class MainForm : Form
                 field_211.BorderColor = Color.Black;
                 field_211.DialogResult = (DialogResult)0;
                 field_211.FocusedColor = Color.Empty;
-                ((Control)field_211).Font = new Font("Segoe UI", 9f);
+                ((Control)field_211).Font = UiFonts.Create(9f);
                 ((Control)field_211).ForeColor = Color.White;
                 field_211.Image = (Image)(object)ImageCache.method_591();
                 field_211.ImageAlign = (HorizontalAlignment)1;
@@ -3839,7 +3839,7 @@ public class MainForm : Form
                 field_212.BorderColor = Color.Black;
                 field_212.DialogResult = (DialogResult)0;
                 field_212.FocusedColor = Color.Empty;
-                ((Control)field_212).Font = new Font("Segoe UI", 9f);
+                ((Control)field_212).Font = UiFonts.Create(9f);
                 ((Control)field_212).ForeColor = Color.White;
                 field_212.Image = (Image)(object)ImageCache.method_604();
                 field_212.ImageAlign = (HorizontalAlignment)1;
@@ -3863,7 +3863,7 @@ public class MainForm : Form
                 field_203.BorderColor = Color.Black;
                 field_203.DialogResult = (DialogResult)0;
                 field_203.FocusedColor = Color.Empty;
-                ((Control)field_203).Font = new Font("Segoe UI", 9f);
+                ((Control)field_203).Font = UiFonts.Create(9f);
                 ((Control)field_203).ForeColor = Color.White;
                 field_203.Image = (Image)(object)ImageCache.method_605();
                 field_203.ImageAlign = (HorizontalAlignment)1;
@@ -3883,7 +3883,7 @@ public class MainForm : Form
                 field_203.TextOffsetX = -5;
                 ((Control)field_203).Click += method_394;
                 ((Control)field_213).AutoSize = true;
-                ((Control)field_213).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_213).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_213).Location = new Point(148, 14);
                 ((Control)field_213).Name = "gunaLabel1";
                 ((Control)field_213).Size = new Size(59, 15);
@@ -3895,7 +3895,7 @@ public class MainForm : Form
                 field_209.FocusedBaseColor = Color.White;
                 field_209.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_209.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_209).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_209).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_209).ForeColor = Color.Black;
                 ((Control)field_209).Location = new Point(14, 75);
                 ((Control)field_209).Name = "textBoxPwd";
@@ -3912,7 +3912,7 @@ public class MainForm : Form
                 field_210.FocusedBaseColor = Color.White;
                 field_210.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_210.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_210).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_210).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_210).ForeColor = Color.Black;
                 ((Control)field_210).Location = new Point(14, 41);
                 ((Control)field_210).Name = "textBoxUsn";
@@ -3949,7 +3949,7 @@ public class MainForm : Form
                 ((Control)field_231).Size = new Size(698, 99);
                 ((Control)field_231).TabIndex = 61;
                 ((Control)field_288).Anchor = (AnchorStyles)9;
-                ((Control)field_288).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_288).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_288).ForeColor = Color.White;
                 ((Control)field_288).Location = new Point(455, 50);
                 ((Control)field_288).Margin = new Padding(2, 0, 2, 0);
@@ -3961,7 +3961,7 @@ public class MainForm : Form
                 field_288.TextAlign = (ContentAlignment)64;
                 ((Control)field_289).Anchor = (AnchorStyles)9;
                 ((Control)field_289).AutoSize = true;
-                ((Control)field_289).Font = new Font("Tahoma", 9f);
+                ((Control)field_289).Font = UiFonts.Create(9f);
                 ((Control)field_289).ForeColor = Color.White;
                 ((Control)field_289).Location = new Point(604, 53);
                 ((Control)field_289).Margin = new Padding(2, 0, 2, 0);
@@ -3971,7 +3971,7 @@ public class MainForm : Form
                 ((Control)field_289).Text = "اصدار الكيرنل:";
                 field_289.TextAlign = (ContentAlignment)64;
                 ((Control)field_234).Anchor = (AnchorStyles)9;
-                ((Control)field_234).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_234).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_234).ForeColor = Color.White;
                 ((Control)field_234).Location = new Point(452, 68);
                 ((Control)field_234).Margin = new Padding(2, 0, 2, 0);
@@ -3983,7 +3983,7 @@ public class MainForm : Form
                 field_234.TextAlign = (ContentAlignment)64;
                 ((Control)field_235).Anchor = (AnchorStyles)9;
                 ((Control)field_235).AutoSize = true;
-                ((Control)field_235).Font = new Font("Tahoma", 9f);
+                ((Control)field_235).Font = UiFonts.Create(9f);
                 ((Control)field_235).ForeColor = Color.White;
                 ((Control)field_235).Location = new Point(604, 71);
                 ((Control)field_235).Margin = new Padding(2, 0, 2, 0);
@@ -3993,7 +3993,7 @@ public class MainForm : Form
                 ((Control)field_235).Text = "المعماريه:";
                 field_235.TextAlign = (ContentAlignment)64;
                 ((Control)field_236).Anchor = (AnchorStyles)9;
-                ((Control)field_236).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_236).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_236).ForeColor = Color.White;
                 ((Control)field_236).Location = new Point(240, 58);
                 ((Control)field_236).Margin = new Padding(2, 0, 2, 0);
@@ -4004,7 +4004,7 @@ public class MainForm : Form
                 ((Control)field_236).Text = "-";
                 field_236.TextAlign = (ContentAlignment)64;
                 ((Control)field_237).Anchor = (AnchorStyles)9;
-                ((Control)field_237).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_237).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_237).ForeColor = Color.White;
                 ((Control)field_237).Location = new Point(240, 38);
                 ((Control)field_237).Margin = new Padding(2, 0, 2, 0);
@@ -4015,7 +4015,7 @@ public class MainForm : Form
                 ((Control)field_237).Text = "-";
                 field_237.TextAlign = (ContentAlignment)64;
                 ((Control)field_238).Anchor = (AnchorStyles)9;
-                ((Control)field_238).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_238).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_238).ForeColor = Color.White;
                 ((Control)field_238).Location = new Point(134, 15);
                 ((Control)field_238).Margin = new Padding(2, 0, 2, 0);
@@ -4026,7 +4026,7 @@ public class MainForm : Form
                 field_238.TextAlign = (ContentAlignment)16;
                 ((Control)field_239).Anchor = (AnchorStyles)9;
                 ((Control)field_239).AutoSize = true;
-                ((Control)field_239).Font = new Font("Tahoma", 9f);
+                ((Control)field_239).Font = UiFonts.Create(9f);
                 ((Control)field_239).ForeColor = Color.White;
                 ((Control)field_239).Location = new Point(369, 41);
                 ((Control)field_239).Margin = new Padding(2, 0, 2, 0);
@@ -4037,7 +4037,7 @@ public class MainForm : Form
                 field_239.TextAlign = (ContentAlignment)64;
                 ((Control)field_240).Anchor = (AnchorStyles)9;
                 ((Control)field_240).AutoSize = true;
-                ((Control)field_240).Font = new Font("Tahoma", 9f);
+                ((Control)field_240).Font = UiFonts.Create(9f);
                 ((Control)field_240).ForeColor = Color.White;
                 ((Control)field_240).Location = new Point(369, 61);
                 ((Control)field_240).Margin = new Padding(2, 0, 2, 0);
@@ -4048,7 +4048,7 @@ public class MainForm : Form
                 field_240.TextAlign = (ContentAlignment)64;
                 ((Control)field_241).Anchor = (AnchorStyles)9;
                 ((Control)field_241).AutoSize = true;
-                ((Control)field_241).Font = new Font("Tahoma", 7f);
+                ((Control)field_241).Font = UiFonts.Create(8.5f);
                 ((Control)field_241).ForeColor = Color.Yellow;
                 ((Control)field_241).Location = new Point(75, 33);
                 ((Control)field_241).Margin = new Padding(2, 0, 2, 0);
@@ -4060,7 +4060,7 @@ public class MainForm : Form
                 ((Control)field_241).Visible = false;
                 ((Control)field_242).Anchor = (AnchorStyles)9;
                 ((Control)field_242).AutoSize = true;
-                ((Control)field_242).Font = new Font("Tahoma", 7f);
+                ((Control)field_242).Font = UiFonts.Create(8.5f);
                 ((Control)field_242).ForeColor = Color.Yellow;
                 ((Control)field_242).Location = new Point(93, 46);
                 ((Control)field_242).Margin = new Padding(2, 0, 2, 0);
@@ -4072,7 +4072,7 @@ public class MainForm : Form
                 ((Control)field_242).Visible = false;
                 ((Control)field_243).Anchor = (AnchorStyles)9;
                 ((Control)field_243).AutoSize = true;
-                ((Control)field_243).Font = new Font("Tahoma", 7f);
+                ((Control)field_243).Font = UiFonts.Create(8.5f);
                 ((Control)field_243).ForeColor = Color.Yellow;
                 ((Control)field_243).Location = new Point(64, 58);
                 ((Control)field_243).Margin = new Padding(2, 0, 2, 0);
@@ -4084,7 +4084,7 @@ public class MainForm : Form
                 ((Control)field_243).Visible = false;
                 ((Control)field_244).Anchor = (AnchorStyles)9;
                 ((Control)field_244).AutoSize = true;
-                ((Control)field_244).Font = new Font("Tahoma", 9f);
+                ((Control)field_244).Font = UiFonts.Create(9f);
                 ((Control)field_244).ForeColor = Color.White;
                 ((Control)field_244).Location = new Point(604, 36);
                 ((Control)field_244).Margin = new Padding(2, 0, 2, 0);
@@ -4095,7 +4095,7 @@ public class MainForm : Form
                 field_244.TextAlign = (ContentAlignment)64;
                 ((Control)field_245).Anchor = (AnchorStyles)9;
                 ((Control)field_245).AutoSize = true;
-                ((Control)field_245).Font = new Font("Tahoma", 9f);
+                ((Control)field_245).Font = UiFonts.Create(9f);
                 ((Control)field_245).ForeColor = Color.White;
                 ((Control)field_245).Location = new Point(369, 18);
                 ((Control)field_245).Margin = new Padding(2, 0, 2, 0);
@@ -4106,7 +4106,7 @@ public class MainForm : Form
                 field_245.TextAlign = (ContentAlignment)64;
                 ((Control)field_246).Anchor = (AnchorStyles)9;
                 ((Control)field_246).AutoSize = true;
-                ((Control)field_246).Font = new Font("Tahoma", 9f);
+                ((Control)field_246).Font = UiFonts.Create(9f);
                 ((Control)field_246).ForeColor = Color.White;
                 ((Control)field_246).Location = new Point(604, 16);
                 ((Control)field_246).Margin = new Padding(2, 0, 2, 0);
@@ -4116,7 +4116,7 @@ public class MainForm : Form
                 ((Control)field_246).Text = "اسم الجهاز:";
                 field_246.TextAlign = (ContentAlignment)64;
                 ((Control)field_247).Anchor = (AnchorStyles)9;
-                ((Control)field_247).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_247).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_247).ForeColor = Color.White;
                 ((Control)field_247).Location = new Point(444, 33);
                 ((Control)field_247).Margin = new Padding(2, 0, 2, 0);
@@ -4127,7 +4127,7 @@ public class MainForm : Form
                 ((Control)field_247).Text = "-";
                 field_247.TextAlign = (ContentAlignment)64;
                 ((Control)field_248).Anchor = (AnchorStyles)9;
-                ((Control)field_248).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_248).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_248).ForeColor = Color.White;
                 ((Control)field_248).Location = new Point(387, 15);
                 ((Control)field_248).Margin = new Padding(2, 0, 2, 0);
@@ -4166,7 +4166,7 @@ public class MainForm : Form
                 field_331.BorderColor = Color.Black;
                 field_331.DialogResult = (DialogResult)0;
                 field_331.FocusedColor = Color.Empty;
-                ((Control)field_331).Font = new Font("Segoe UI", 9f);
+                ((Control)field_331).Font = UiFonts.Create(9f);
                 ((Control)field_331).ForeColor = Color.White;
                 field_331.Image = (Image)(object)ImageCache.method_601();
                 field_331.ImageSize = new Size(21, 21);
@@ -4190,7 +4190,7 @@ public class MainForm : Form
                 field_329.BorderColor = Color.Black;
                 field_329.DialogResult = (DialogResult)0;
                 field_329.FocusedColor = Color.Empty;
-                ((Control)field_329).Font = new Font("Segoe UI", 9f);
+                ((Control)field_329).Font = UiFonts.Create(9f);
                 ((Control)field_329).ForeColor = Color.White;
                 field_329.Image = (Image)(object)ImageCache.method_580();
                 field_329.ImageSize = new Size(35, 35);
@@ -4210,7 +4210,7 @@ public class MainForm : Form
                 field_310.CheckedOffColor = Color.Gray;
                 field_310.CheckedOnColor = Color.FromArgb(64, 0, 0);
                 field_310.FillColor = Color.White;
-                ((Control)field_310).Font = new Font("Segoe UI", 8f);
+                ((Control)field_310).Font = UiFonts.Create(8f);
                 ((Control)field_310).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_310).Location = new Point(187, 178);
                 ((Control)field_310).Name = "cb_AutoNumberingV100";
@@ -4236,7 +4236,7 @@ public class MainForm : Form
                 ((Control)field_324).Size = new Size(683, 51);
                 ((Control)field_324).TabIndex = 72;
                 ((Control)field_262).AutoSize = true;
-                ((Control)field_262).Font = new Font("Segoe UI", 10f, (FontStyle)1);
+                ((Control)field_262).Font = UiFonts.Create(10f, (FontStyle)1);
                 ((Control)field_262).Location = new Point(498, 15);
                 ((Control)field_262).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_262).Name = "label9";
@@ -4254,7 +4254,7 @@ public class MainForm : Form
                 ((Control)field_305).TabIndex = 70;
                 ((Control)field_305).Click += method_402;
                 ((Control)field_261).AutoSize = true;
-                ((Control)field_261).Font = new Font("Segoe UI", 10f, (FontStyle)1);
+                ((Control)field_261).Font = UiFonts.Create(10f, (FontStyle)1);
                 ((Control)field_261).Location = new Point(605, 15);
                 ((Control)field_261).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_261).Name = "lbl_vid";
@@ -4263,7 +4263,7 @@ public class MainForm : Form
                 ((Control)field_261).Text = "رقم الفيلان";
                 field_261.TextAlign = (ContentAlignment)64;
                 ((Control)field_260).AutoSize = true;
-                ((Control)field_260).Font = new Font("Segoe UI", 10f, (FontStyle)1);
+                ((Control)field_260).Font = UiFonts.Create(10f, (FontStyle)1);
                 ((Control)field_260).Location = new Point(102, 15);
                 ((Control)field_260).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_260).Name = "label11";
@@ -4279,7 +4279,7 @@ public class MainForm : Form
                 field_267.FocusedBaseColor = Color.White;
                 field_267.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_267.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_267).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_267).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_267).ForeColor = Color.Black;
                 ((Control)field_267).Location = new Point(546, 9);
                 ((Control)field_267).Name = "textBoxN_VLAN";
@@ -4302,7 +4302,7 @@ public class MainForm : Form
                 field_266.FocusedBaseColor = Color.White;
                 field_266.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_266.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_266).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_266).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_266).ForeColor = Color.Black;
                 ((Control)field_266).Location = new Point(383, 9);
                 ((Control)field_266).Name = "textBoxN_IP";
@@ -4324,7 +4324,7 @@ public class MainForm : Form
                 field_264.FocusedBaseColor = Color.White;
                 field_264.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_264.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_264).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_264).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_264).ForeColor = Color.Black;
                 ((Control)field_264).Location = new Point(7, 9);
                 ((Control)field_264).Name = "textBoxN_HN";
@@ -4338,7 +4338,7 @@ public class MainForm : Form
                 field_264.TextAlign = (HorizontalAlignment)2;
                 field_284.SetToolTip((Control)(object)field_264, "الاسم الذي يظهر في النيبورز");
                 ((Control)field_263).AutoSize = true;
-                ((Control)field_263).Font = new Font("Segoe UI", 10f, (FontStyle)1);
+                ((Control)field_263).Font = UiFonts.Create(10f, (FontStyle)1);
                 ((Control)field_263).Location = new Point(303, 15);
                 ((Control)field_263).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_263).Name = "label2";
@@ -4355,7 +4355,7 @@ public class MainForm : Form
                 field_265.FocusedBaseColor = Color.White;
                 field_265.FocusedBorderColor = Color.Red;
                 field_265.FocusedForeColor = Color.Navy;
-                ((Control)field_265).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_265).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_265).ForeColor = Color.Black;
                 ((Control)field_265).Location = new Point(177, 9);
                 ((Control)field_265).Name = "textBoxN_Pass";
@@ -4369,7 +4369,7 @@ public class MainForm : Form
                 field_284.SetToolTip((Control)(object)field_265, "كلمة المرور الخاصه بالإعدادات");
                 ((Control)field_334).AutoSize = true;
                 ((Control)field_334).BackColor = Color.Transparent;
-                ((Control)field_334).Font = new Font("Segoe UI", 8f);
+                ((Control)field_334).Font = UiFonts.Create(8f);
                 ((Control)field_334).ForeColor = Color.FromArgb(0, 0, 192);
                 ((Control)field_334).Location = new Point(611, 35);
                 ((Control)field_334).Margin = new Padding(2, 0, 2, 0);
@@ -4387,7 +4387,7 @@ public class MainForm : Form
                 ((Control)field_313).Controls.Add((Control)(object)field_317);
                 ((Control)field_313).Controls.Add((Control)(object)field_318);
                 ((Control)field_313).Controls.Add((Control)(object)field_335);
-                ((Control)field_313).Font = new Font("Segoe UI", 9f);
+                ((Control)field_313).Font = UiFonts.Create(9f);
                 ((Control)field_313).ForeColor = Color.Blue;
                 ((Control)field_313).Location = new Point(7, 3);
                 ((Control)field_313).Name = "groupBox2";
@@ -4398,7 +4398,7 @@ public class MainForm : Form
                 ((Control)field_313).Text = "اعدادات";
                 ((Control)field_314).Anchor = (AnchorStyles)10;
                 ((Control)field_314).AutoSize = true;
-                ((Control)field_314).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_314).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_314).ForeColor = Color.Blue;
                 ((Control)field_314).Location = new Point(101, -1);
                 ((Control)field_314).Margin = new Padding(2, 0, 2, 0);
@@ -4416,7 +4416,7 @@ public class MainForm : Form
                 ((ComboBox)field_315).DrawMode = (DrawMode)1;
                 ((ComboBox)field_315).DropDownStyle = (ComboBoxStyle)2;
                 field_315.FocusedColor = Color.Empty;
-                ((Control)field_315).Font = new Font("Segoe UI", 10f);
+                ((Control)field_315).Font = UiFonts.Create(10f);
                 ((Control)field_315).ForeColor = Color.Black;
                 ((ComboBox)field_315).Items.AddRange(new object[11]
                 {
@@ -4450,7 +4450,7 @@ public class MainForm : Form
                 field_316.FocusedBaseColor = Color.White;
                 field_316.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_316.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_316).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_316).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_316).ForeColor = Color.Black;
                 ((Control)field_316).Location = new Point(26, 51);
                 ((Control)field_316).Name = "gunaTextBox1";
@@ -4465,7 +4465,7 @@ public class MainForm : Form
                 ((Control)field_316).TextChanged += method_420;
                 ((Control)field_317).Anchor = (AnchorStyles)10;
                 ((Control)field_317).AutoSize = true;
-                ((Control)field_317).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_317).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_317).Location = new Point(134, 24);
                 ((Control)field_317).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_317).Name = "label24";
@@ -4475,7 +4475,7 @@ public class MainForm : Form
                 field_317.TextAlign = (ContentAlignment)64;
                 ((Control)field_318).Anchor = (AnchorStyles)10;
                 ((Control)field_318).AutoSize = true;
-                ((Control)field_318).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_318).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_318).Location = new Point(137, 57);
                 ((Control)field_318).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_318).Name = "label27";
@@ -4489,7 +4489,7 @@ public class MainForm : Form
                 field_290.CheckedOffColor = Color.Gray;
                 field_290.CheckedOnColor = Color.FromArgb(64, 0, 0);
                 field_290.FillColor = Color.White;
-                ((Control)field_290).Font = new Font("Segoe UI", 8f);
+                ((Control)field_290).Font = UiFonts.Create(8f);
                 ((Control)field_290).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_290).Location = new Point(339, 178);
                 ((Control)field_290).Name = "cb_AutoNumbering";
@@ -4507,7 +4507,7 @@ public class MainForm : Form
                 field_268.BorderColor = Color.Black;
                 field_268.DialogResult = (DialogResult)0;
                 field_268.FocusedColor = Color.Empty;
-                ((Control)field_268).Font = new Font("Segoe UI", 9f);
+                ((Control)field_268).Font = UiFonts.Create(9f);
                 ((Control)field_268).ForeColor = Color.White;
                 field_268.Image = (Image)(object)ImageCache.method_587();
                 field_268.ImageSize = new Size(33, 33);
@@ -4531,7 +4531,7 @@ public class MainForm : Form
                 field_287.BorderColor = Color.Black;
                 field_287.DialogResult = (DialogResult)0;
                 field_287.FocusedColor = Color.Empty;
-                ((Control)field_287).Font = new Font("Segoe UI", 9f);
+                ((Control)field_287).Font = UiFonts.Create(9f);
                 ((Control)field_287).ForeColor = Color.White;
                 field_287.Image = (Image)(object)ImageCache.method_603();
                 field_287.ImageSize = new Size(33, 33);
@@ -4555,7 +4555,7 @@ public class MainForm : Form
                 field_286.BorderColor = Color.Black;
                 field_286.DialogResult = (DialogResult)0;
                 field_286.FocusedColor = Color.Empty;
-                ((Control)field_286).Font = new Font("Segoe UI", 9f);
+                ((Control)field_286).Font = UiFonts.Create(9f);
                 ((Control)field_286).ForeColor = Color.White;
                 field_286.Image = (Image)(object)ImageCache.method_595();
                 field_286.ImageSize = new Size(30, 30);
@@ -4587,7 +4587,7 @@ public class MainForm : Form
                 ((Control)field_256).Controls.Add((Control)(object)field_257);
                 ((Control)field_256).Controls.Add((Control)(object)field_258);
                 ((Control)field_256).Controls.Add((Control)(object)field_259);
-                ((Control)field_256).Font = new Font("Segoe UI", 9f);
+                ((Control)field_256).Font = UiFonts.Create(9f);
                 ((Control)field_256).ForeColor = Color.Maroon;
                 ((Control)field_256).Location = new Point(186, 3);
                 ((Control)field_256).Name = "GB_Set5G";
@@ -4609,7 +4609,7 @@ public class MainForm : Form
                 field_325.CheckedChanged += method_409;
                 ((Control)field_326).Anchor = (AnchorStyles)10;
                 ((Control)field_326).AutoSize = true;
-                ((Control)field_326).Font = new Font("Segoe UI", 9f);
+                ((Control)field_326).Font = UiFonts.Create(9f);
                 ((Control)field_326).ForeColor = Color.Maroon;
                 ((Control)field_326).Location = new Point(411, 24);
                 ((Control)field_326).Margin = new Padding(2, 0, 2, 0);
@@ -4643,7 +4643,7 @@ public class MainForm : Form
                 field_322.CheckedChanged += method_409;
                 ((Control)field_323).Anchor = (AnchorStyles)10;
                 ((Control)field_323).AutoSize = true;
-                ((Control)field_323).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_323).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_323).ForeColor = Color.Maroon;
                 ((Control)field_323).Location = new Point(432, -1);
                 ((Control)field_323).Margin = new Padding(2, 0, 2, 0);
@@ -4661,7 +4661,7 @@ public class MainForm : Form
                 ((ComboBox)field_311).DrawMode = (DrawMode)1;
                 ((ComboBox)field_311).DropDownStyle = (ComboBoxStyle)2;
                 field_311.FocusedColor = Color.Empty;
-                ((Control)field_311).Font = new Font("Segoe UI", 10f);
+                ((Control)field_311).Font = UiFonts.Create(10f);
                 ((Control)field_311).ForeColor = Color.Black;
                 ((ListControl)field_311).FormattingEnabled = true;
                 ((ComboBox)field_311).Items.AddRange(new object[3]
@@ -4682,7 +4682,7 @@ public class MainForm : Form
                 ((Control)field_312).Anchor = (AnchorStyles)10;
                 ((Control)field_312).AutoSize = true;
                 ((Control)field_312).Enabled = false;
-                ((Control)field_312).Font = new Font("Segoe UI", 9f);
+                ((Control)field_312).Font = UiFonts.Create(9f);
                 ((Control)field_312).ForeColor = Color.Maroon;
                 ((Control)field_312).Location = new Point(308, 24);
                 ((Control)field_312).Margin = new Padding(2, 0, 2, 0);
@@ -4694,7 +4694,7 @@ public class MainForm : Form
                 field_312.TextAlign = (ContentAlignment)64;
                 ((Control)field_299).Anchor = (AnchorStyles)10;
                 ((Control)field_299).AutoSize = true;
-                ((Control)field_299).Font = new Font("Segoe UI", 9f);
+                ((Control)field_299).Font = UiFonts.Create(9f);
                 ((Control)field_299).ForeColor = Color.Maroon;
                 ((Control)field_299).Location = new Point(237, 24);
                 ((Control)field_299).Margin = new Padding(2, 0, 2, 0);
@@ -4712,7 +4712,7 @@ public class MainForm : Form
                 ((ComboBox)field_272).DrawMode = (DrawMode)1;
                 ((ComboBox)field_272).DropDownStyle = (ComboBoxStyle)2;
                 field_272.FocusedColor = Color.Empty;
-                ((Control)field_272).Font = new Font("Segoe UI", 10f);
+                ((Control)field_272).Font = UiFonts.Create(10f);
                 ((Control)field_272).ForeColor = Color.Black;
                 ((ListControl)field_272).FormattingEnabled = true;
                 ((Control)field_272).Location = new Point(97, 19);
@@ -4732,7 +4732,7 @@ public class MainForm : Form
                 field_270.FocusedBaseColor = Color.White;
                 field_270.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_270.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_270).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_270).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_270).ForeColor = Color.Black;
                 ((Control)field_270).Location = new Point(7, 51);
                 ((Control)field_270).Name = "textBoxN_MeshP";
@@ -4756,7 +4756,7 @@ public class MainForm : Form
                 field_271.FocusedBaseColor = SystemColors.Window;
                 field_271.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_271.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_271).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_271).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_271).ForeColor = Color.Black;
                 ((Control)field_271).Location = new Point(158, 51);
                 ((Control)field_271).Name = "textBoxN_MeshN";
@@ -4770,7 +4770,7 @@ public class MainForm : Form
                 field_284.SetToolTip((Control)(object)field_271, "اسم شبكة الإرسال\r\nيفضل البرمجه بإسم قصير يدل على اسم شبكتك واضافة رقم الأكسس \r\nمثلا اذا كان اسم الأكسس AmaanTelecom-6 فيمكن تسمية شبكة الارسال am6 ليسهل حفظ الإسم عند برمجة المستقبلات\r\n");
                 ((Control)field_257).Anchor = (AnchorStyles)10;
                 ((Control)field_257).AutoSize = true;
-                ((Control)field_257).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_257).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_257).Location = new Point(181, 24);
                 ((Control)field_257).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_257).Name = "label14";
@@ -4780,7 +4780,7 @@ public class MainForm : Form
                 field_257.TextAlign = (ContentAlignment)64;
                 ((Control)field_258).Anchor = (AnchorStyles)10;
                 ((Control)field_258).AutoSize = true;
-                ((Control)field_258).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_258).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_258).Location = new Point(124, 57);
                 ((Control)field_258).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_258).Name = "LBL_MESH_P";
@@ -4790,7 +4790,7 @@ public class MainForm : Form
                 field_258.TextAlign = (ContentAlignment)64;
                 ((Control)field_259).Anchor = (AnchorStyles)10;
                 ((Control)field_259).AutoSize = true;
-                ((Control)field_259).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_259).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_259).Location = new Point(394, 57);
                 ((Control)field_259).Margin = new Padding(2, 0, 2, 0);
                 ((Control)field_259).Name = "label12";
@@ -4807,7 +4807,7 @@ public class MainForm : Form
                 field_285.BorderColor = Color.Black;
                 field_285.DialogResult = (DialogResult)0;
                 field_285.FocusedColor = Color.Empty;
-                ((Control)field_285).Font = new Font("Segoe UI", 9f);
+                ((Control)field_285).Font = UiFonts.Create(9f);
                 ((Control)field_285).ForeColor = Color.White;
                 field_285.Image = (Image)(object)ImageCache.method_582();
                 field_285.ImageSize = new Size(35, 35);
@@ -4831,7 +4831,7 @@ public class MainForm : Form
                 field_269.BorderColor = Color.Black;
                 field_269.DialogResult = (DialogResult)0;
                 field_269.FocusedColor = Color.Empty;
-                ((Control)field_269).Font = new Font("Segoe UI", 9f);
+                ((Control)field_269).Font = UiFonts.Create(9f);
                 ((Control)field_269).ForeColor = Color.White;
                 field_269.Image = (Image)(object)ImageCache.method_590();
                 field_269.ImageSize = new Size(33, 33);
@@ -4854,7 +4854,7 @@ public class MainForm : Form
                 ((Control)field_251).Controls.Add((Control)(object)field_321);
                 ((Control)field_251).Controls.Add((Control)(object)field_252);
                 ((Control)field_251).Controls.Add((Control)(object)field_249);
-                ((Control)field_251).Font = new Font("Segoe UI", 10f, (FontStyle)1);
+                ((Control)field_251).Font = UiFonts.Create(10f, (FontStyle)1);
                 ((Control)field_251).Location = new Point(7, 96);
                 ((Control)field_251).Name = "groupBox1";
                 ((Control)field_251).RightToLeft = (RightToLeft)1;
@@ -4866,7 +4866,7 @@ public class MainForm : Form
                 field_255.CheckedOffColor = Color.Gray;
                 field_255.CheckedOnColor = Color.FromArgb(64, 0, 0);
                 field_255.FillColor = Color.White;
-                ((Control)field_255).Font = new Font("Segoe UI", 9f);
+                ((Control)field_255).Font = UiFonts.Create(9f);
                 ((Control)field_255).Location = new Point(300, 28);
                 ((Control)field_255).Name = "cb_5GName";
                 ((Control)field_255).RightToLeft = (RightToLeft)1;
@@ -4875,7 +4875,7 @@ public class MainForm : Form
                 ((Control)field_255).Text = "اسم مشابه";
                 ((Control)field_253).Anchor = (AnchorStyles)9;
                 ((Control)field_253).BackColor = Color.Maroon;
-                ((Control)field_253).Font = new Font("Tahoma", 9.75f);
+                ((Control)field_253).Font = UiFonts.Create(9.75f);
                 ((Control)field_253).ForeColor = Color.White;
                 ((Control)field_253).Location = new Point(612, 20);
                 ((Control)field_253).Margin = new Padding(2, 0, 2, 0);
@@ -4904,7 +4904,7 @@ public class MainForm : Form
                 field_254.FocusedBaseColor = Color.White;
                 field_254.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_254.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_254).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_254).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_254).ForeColor = Color.Black;
                 ((Control)field_254).Location = new Point(393, 20);
                 ((Control)field_254).Name = "textBoxN_SSID5";
@@ -4919,7 +4919,7 @@ public class MainForm : Form
                 field_284.SetToolTip((Control)(object)field_254, "اسم الشبكة بتردد 5 جيجا");
                 ((Control)field_321).Anchor = (AnchorStyles)10;
                 ((Control)field_321).AutoSize = true;
-                ((Control)field_321).Font = new Font("Segoe UI", 9f);
+                ((Control)field_321).Font = UiFonts.Create(9f);
                 ((Control)field_321).ForeColor = Color.Maroon;
                 ((Control)field_321).Location = new Point(576, 59);
                 ((Control)field_321).Margin = new Padding(2, 0, 2, 0);
@@ -4931,7 +4931,7 @@ public class MainForm : Form
                 field_321.TextAlign = (ContentAlignment)64;
                 ((Control)field_252).Anchor = (AnchorStyles)9;
                 ((Control)field_252).BackColor = Color.Navy;
-                ((Control)field_252).Font = new Font("Tahoma", 9.75f);
+                ((Control)field_252).Font = UiFonts.Create(9.75f);
                 ((Control)field_252).ForeColor = Color.White;
                 ((Control)field_252).Location = new Point(13, 20);
                 ((Control)field_252).Margin = new Padding(2, 0, 2, 0);
@@ -4949,7 +4949,7 @@ public class MainForm : Form
                 field_249.FocusedBaseColor = Color.White;
                 field_249.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_249.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_249).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_249).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_249).ForeColor = Color.Black;
                 ((Control)field_249).Location = new Point(62, 20);
                 ((Control)field_249).Name = "textBoxN_SSID2";
@@ -4971,7 +4971,7 @@ public class MainForm : Form
                 field_250.BorderColor = Color.Black;
                 field_250.DialogResult = (DialogResult)0;
                 field_250.FocusedColor = Color.Empty;
-                ((Control)field_250).Font = new Font("Segoe UI", 14f, (FontStyle)1);
+                ((Control)field_250).Font = UiFonts.Create(14f, (FontStyle)1);
                 ((Control)field_250).ForeColor = Color.White;
                 field_250.Image = (Image)(object)ImageCache.method_585();
                 field_250.ImageSize = new Size(30, 30);
@@ -4998,7 +4998,7 @@ public class MainForm : Form
                 field_202.BorderColor = Color.Black;
                 field_202.DialogResult = (DialogResult)0;
                 field_202.FocusedColor = Color.Empty;
-                ((Control)field_202).Font = new Font("Segoe UI", 9f);
+                ((Control)field_202).Font = UiFonts.Create(9f);
                 ((Control)field_202).ForeColor = Color.White;
                 field_202.Image = (Image)(object)ImageCache.method_596();
                 field_202.ImageSize = new Size(30, 30);
@@ -5020,7 +5020,7 @@ public class MainForm : Form
                 ((Control)field_292).Controls.Add((Control)(object)field_296);
                 ((Control)field_292).Controls.Add((Control)(object)field_297);
                 ((Control)field_292).Controls.Add((Control)(object)field_298);
-                ((Control)field_292).Font = new Font("Segoe UI", 8f, (FontStyle)1);
+                ((Control)field_292).Font = UiFonts.Create(8f, (FontStyle)1);
                 ((Control)field_292).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_292).Location = new Point(7, 255);
                 ((Control)field_292).Name = "GB_ExtraSettings";
@@ -5035,7 +5035,7 @@ public class MainForm : Form
                 field_330.CheckedOffColor = Color.Gray;
                 field_330.CheckedOnColor = Color.Firebrick;
                 field_330.FillColor = Color.White;
-                ((Control)field_330).Font = new Font("Segoe UI", 7.5f);
+                ((Control)field_330).Font = UiFonts.Create(8.5f);
                 ((Control)field_330).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_330).Location = new Point(448, 14);
                 ((Control)field_330).Name = "cb_Ext_Fix";
@@ -5048,7 +5048,7 @@ public class MainForm : Form
                 field_293.CheckedOffColor = Color.Gray;
                 field_293.CheckedOnColor = Color.Firebrick;
                 field_293.FillColor = Color.White;
-                ((Control)field_293).Font = new Font("Segoe UI", 7.5f);
+                ((Control)field_293).Font = UiFonts.Create(8.5f);
                 ((Control)field_293).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_293).Location = new Point(573, 14);
                 ((Control)field_293).Name = "cb_Ext_Add_WAN";
@@ -5062,7 +5062,7 @@ public class MainForm : Form
                 field_294.CheckedOffColor = Color.Gray;
                 field_294.CheckedOnColor = Color.Firebrick;
                 field_294.FillColor = Color.White;
-                ((Control)field_294).Font = new Font("Segoe UI", 7.5f);
+                ((Control)field_294).Font = UiFonts.Create(8.5f);
                 ((Control)field_294).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_294).Location = new Point(200, 14);
                 ((Control)field_294).Name = "cb_Ext_DisIPv6";
@@ -5075,7 +5075,7 @@ public class MainForm : Form
                 field_295.CheckedOffColor = Color.Gray;
                 field_295.CheckedOnColor = Color.Firebrick;
                 field_295.FillColor = Color.White;
-                ((Control)field_295).Font = new Font("Segoe UI", 7.5f);
+                ((Control)field_295).Font = UiFonts.Create(8.5f);
                 ((Control)field_295).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_295).Location = new Point(104, 14);
                 ((Control)field_295).Name = "cb_Ext_DisDHCPv4";
@@ -5088,7 +5088,7 @@ public class MainForm : Form
                 field_296.CheckedOffColor = Color.Gray;
                 field_296.CheckedOnColor = Color.Firebrick;
                 field_296.FillColor = Color.White;
-                ((Control)field_296).Font = new Font("Segoe UI", 7.5f);
+                ((Control)field_296).Font = UiFonts.Create(8.5f);
                 ((Control)field_296).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_296).Location = new Point(9, 14);
                 ((Control)field_296).Name = "cb_Ext_DisDHCPv6";
@@ -5101,7 +5101,7 @@ public class MainForm : Form
                 field_297.CheckedOffColor = Color.Gray;
                 field_297.CheckedOnColor = Color.Firebrick;
                 field_297.FillColor = Color.White;
-                ((Control)field_297).Font = new Font("Segoe UI", 7.5f);
+                ((Control)field_297).Font = UiFonts.Create(8.5f);
                 ((Control)field_297).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_297).Location = new Point(354, 14);
                 ((Control)field_297).Name = "cb_Ext_DisFirewall";
@@ -5114,7 +5114,7 @@ public class MainForm : Form
                 field_298.CheckedOffColor = Color.Gray;
                 field_298.CheckedOnColor = Color.Firebrick;
                 field_298.FillColor = Color.White;
-                ((Control)field_298).Font = new Font("Segoe UI", 7.5f);
+                ((Control)field_298).Font = UiFonts.Create(8.5f);
                 ((Control)field_298).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_298).Location = new Point(277, 14);
                 ((Control)field_298).Name = "cb_Ext_DisNat";
@@ -5131,7 +5131,7 @@ public class MainForm : Form
                 field_277.BorderColor = Color.Black;
                 field_277.DialogResult = (DialogResult)0;
                 field_277.FocusedColor = Color.Empty;
-                ((Control)field_277).Font = new Font("Segoe UI", 9f);
+                ((Control)field_277).Font = UiFonts.Create(9f);
                 ((Control)field_277).ForeColor = Color.White;
                 field_277.Image = null;
                 field_277.ImageSize = new Size(33, 33);
@@ -5147,13 +5147,13 @@ public class MainForm : Form
                 ((Control)field_277).Visible = false;
                 ((Control)field_277).Click += method_401;
                 ((Control)field_233).AutoSize = true;
-                ((Control)field_233).Font = new Font("Segoe UI", 15f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+                ((Control)field_233).Font = UiFonts.Create(15f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
                 ((Control)field_233).ForeColor = Color.Red;
                 ((Control)field_233).Location = new Point(324, 3);
                 ((Control)field_233).Name = "gunaLabel2";
                 ((Control)field_233).Size = new Size(152, 28);
                 ((Control)field_233).TabIndex = 63;
-                ((Control)field_233).Text = "AmaanWRT v8";
+                ((Control)field_233).Text = "AmaanWRT v8.1.1";
                 ((Control)field_233).MouseDown += method_340;
                 ((Control)field_273).Anchor = (AnchorStyles)14;
                 ((Control)field_273).Controls.Add((Control)(object)field_300);
@@ -5169,7 +5169,7 @@ public class MainForm : Form
                 ((Control)field_300).Anchor = (AnchorStyles)10;
                 ((Control)field_300).AutoSize = true;
                 ((Control)field_300).BackColor = Color.Transparent;
-                ((Control)field_300).Font = new Font("Tahoma", 8f);
+                ((Control)field_300).Font = UiFonts.Create(8f);
                 ((Control)field_300).ForeColor = Color.Black;
                 ((Control)field_300).Location = new Point(624, 7);
                 ((Control)field_300).Margin = new Padding(2, 0, 2, 0);
@@ -5180,7 +5180,7 @@ public class MainForm : Form
                 field_300.TextAlign = (ContentAlignment)32;
                 ((Control)field_301).Anchor = (AnchorStyles)10;
                 ((Control)field_301).BackColor = Color.Transparent;
-                ((Control)field_301).Font = new Font("Tahoma", 8f);
+                ((Control)field_301).Font = UiFonts.Create(8f);
                 ((Control)field_301).ForeColor = Color.Black;
                 ((Control)field_301).Location = new Point(564, 4);
                 ((Control)field_301).Margin = new Padding(2, 0, 2, 0);
@@ -5192,7 +5192,7 @@ public class MainForm : Form
                 field_284.SetToolTip((Control)(object)field_301, "المهندس منير الشريف");
                 ((Control)field_302).Anchor = (AnchorStyles)10;
                 ((Control)field_302).BackColor = Color.Transparent;
-                ((Control)field_302).Font = new Font("Tahoma", 8f);
+                ((Control)field_302).Font = UiFonts.Create(8f);
                 ((Control)field_302).ForeColor = Color.Black;
                 ((Control)field_302).Location = new Point(636, 4);
                 ((Control)field_302).Margin = new Padding(2, 0, 2, 0);
@@ -5204,7 +5204,7 @@ public class MainForm : Form
                 field_284.SetToolTip((Control)(object)field_302, "المهندس جنيد باوزير (واتساب)");
                 ((Control)field_276).Anchor = (AnchorStyles)14;
                 ((Control)field_276).BackColor = SystemColors.Control;
-                ((Control)field_276).Font = new Font("Tahoma", 9f);
+                ((Control)field_276).Font = UiFonts.Create(9f);
                 ((Control)field_276).ForeColor = Color.Black;
                 ((Control)field_276).Location = new Point(116, 1);
                 ((Control)field_276).Margin = new Padding(2, 0, 2, 0);
@@ -5216,7 +5216,7 @@ public class MainForm : Form
                 field_276.TextAlign = (ContentAlignment)32;
                 ((Control)field_274).Anchor = (AnchorStyles)6;
                 ((Control)field_274).AutoSize = true;
-                ((Control)field_274).Font = new Font("Tahoma", 10f, (FontStyle)1);
+                ((Control)field_274).Font = UiFonts.Create(10f, (FontStyle)1);
                 ((Control)field_274).Location = new Point(3, 3);
                 ((Control)field_274).Name = "linkLabel1";
                 ((Control)field_274).RightToLeft = (RightToLeft)0;
@@ -5228,7 +5228,7 @@ public class MainForm : Form
                 field_284.SetToolTip((Control)(object)field_274, "تابع صفحتنا على الفيسبوك ليصلك كل جديد");
                 ((Control)field_275).Anchor = (AnchorStyles)10;
                 ((Control)field_275).BackColor = Color.Transparent;
-                ((Control)field_275).Font = new Font("Tahoma", 8f);
+                ((Control)field_275).Font = UiFonts.Create(8f);
                 ((Control)field_275).ForeColor = Color.Black;
                 ((Control)field_275).Location = new Point(692, 4);
                 ((Control)field_275).Margin = new Padding(2, 0, 2, 0);
@@ -5273,14 +5273,14 @@ public class MainForm : Form
                 field_279.RenderStyle.TextRenderingHint = (DrawingTextRenderingHint)5;
                 ((Control)field_279).Size = new Size(242, 148);
                 ((ToolStripItem)field_291).BackColor = Color.FromArgb(192, 0, 0);
-                ((ToolStripItem)field_291).Font = new Font("Segoe UI", 11f, (FontStyle)1);
+                ((ToolStripItem)field_291).Font = UiFonts.Create(11f, (FontStyle)1);
                 ((ToolStripItem)field_291).ForeColor = Color.Yellow;
                 ((ToolStripItem)field_291).Name = "tsmi_DirectUpgrade";
                 ((ToolStripItem)field_291).Size = new Size(241, 24);
                 ((ToolStripItem)field_291).Text = "تحديث سوفت بدون اتصال";
                 ((ToolStripItem)field_291).Click += method_376;
                 ((ToolStripItem)field_328).BackColor = Color.Blue;
-                ((ToolStripItem)field_328).Font = new Font("Segoe UI", 10f, (FontStyle)1);
+                ((ToolStripItem)field_328).Font = UiFonts.Create(10f, (FontStyle)1);
                 ((ToolStripItem)field_328).ForeColor = Color.White;
                 ((ToolStripItem)field_328).Name = "tsmi_staticIP";
                 ((ToolStripItem)field_328).Size = new Size(241, 24);
@@ -5328,7 +5328,7 @@ public class MainForm : Form
                 field_333.FocusedBaseColor = Color.White;
                 field_333.FocusedBorderColor = Color.FromArgb(100, 88, 255);
                 field_333.FocusedForeColor = SystemColors.ControlText;
-                ((Control)field_333).Font = new Font("Segoe UI", 7f);
+                ((Control)field_333).Font = UiFonts.Create(8.5f);
                 ((Control)field_333).ForeColor = Color.Black;
                 ((Control)field_333).Location = new Point(121, 5);
                 ((Control)field_333).Name = "Lbl_Lic_back";
@@ -5345,7 +5345,7 @@ public class MainForm : Form
                 field_303.Interval = 3000;
                 field_303.Tick += method_394;
                 ((Control)field_308).AutoSize = true;
-                ((Control)field_308).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((Control)field_308).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((Control)field_308).ForeColor = Color.DimGray;
                 ((Control)field_308).Location = new Point(644, 11);
                 ((Control)field_308).Margin = new Padding(2, 0, 2, 0);
@@ -5360,7 +5360,7 @@ public class MainForm : Form
                 ((Control)field_308).MouseLeave += method_405;
                 ((Control)field_308).MouseHover += method_404;
                 ((Control)field_309).BackColor = Color.PaleGoldenrod;
-                ((Control)field_309).Font = new Font("Tahoma", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+                ((Control)field_309).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
                 ((Control)field_309).ForeColor = Color.FromArgb(64, 64, 64);
                 ((Control)field_309).Location = new Point(129, 9);
                 ((Control)field_309).Margin = new Padding(2, 0, 2, 0);
@@ -5370,7 +5370,7 @@ public class MainForm : Form
                 ((Control)field_309).Text = "نسخه كامله";
                 field_309.TextAlign = (ContentAlignment)32;
                 ((ToolStrip)field_332).BackColor = Color.PaleGoldenrod;
-                ((Control)field_332).Font = new Font("Segoe UI", 8f);
+                ((Control)field_332).Font = UiFonts.Create(8f);
                 ((Control)field_332).Name = "gunaContextMenuStrip1";
                 field_332.RenderStyle.ArrowColor = Color.FromArgb(151, 143, 255);
                 field_332.RenderStyle.BorderColor = Color.Gainsboro;
@@ -5390,7 +5390,7 @@ public class MainForm : Form
                 ((Control)field_283).ContextMenuStrip = (ContextMenuStrip)(object)field_279;
                 field_283.DialogResult = (DialogResult)0;
                 field_283.FocusedColor = Color.Empty;
-                ((Control)field_283).Font = new Font("Segoe UI", 9f);
+                ((Control)field_283).Font = UiFonts.Create(9f);
                 ((Control)field_283).ForeColor = Color.White;
                 field_283.Image = (Image)(object)ImageCache.method_593();
                 field_283.ImageSize = new Size(20, 20);
@@ -5420,7 +5420,7 @@ public class MainForm : Form
                 field_229.BorderColor = Color.Black;
                 field_229.DialogResult = (DialogResult)0;
                 field_229.FocusedColor = Color.Empty;
-                ((Control)field_229).Font = new Font("Segoe UI", 14f, (FontStyle)1);
+                ((Control)field_229).Font = UiFonts.Create(14f, (FontStyle)1);
                 ((Control)field_229).ForeColor = Color.White;
                 field_229.Image = (Image)(object)ImageCache.method_592();
                 field_229.ImageAlign = (HorizontalAlignment)2;
@@ -5439,7 +5439,7 @@ public class MainForm : Form
                 field_229.TextAlign = (HorizontalAlignment)2;
                 ((Control)field_229).Click += method_341;
                 ((Control)field_336).BackColor = Color.Transparent;
-                ((Control)field_336).Font = new Font("Tahoma", 6f);
+                ((Control)field_336).Font = UiFonts.Create(8f);
                 ((Control)field_336).ForeColor = Color.Black;
                 ((Control)field_336).Location = new Point(14, 75);
                 ((Control)field_336).Margin = new Padding(2, 0, 2, 0);
@@ -5449,7 +5449,7 @@ public class MainForm : Form
                 ((Control)field_336).Text = "مفتوح (بدون رمز)";
                 field_336.TextAlign = (ContentAlignment)32;
                 ((Control)field_335).BackColor = Color.Transparent;
-                ((Control)field_335).Font = new Font("Tahoma", 6f);
+                ((Control)field_335).Font = UiFonts.Create(8f);
                 ((Control)field_335).ForeColor = Color.Black;
                 ((Control)field_335).Location = new Point(31, 76);
                 ((Control)field_335).Margin = new Padding(2, 0, 2, 0);
@@ -5458,7 +5458,7 @@ public class MainForm : Form
                 ((Control)field_335).TabIndex = 80;
                 ((Control)field_335).Text = "مفتوح (بدون رمز)";
                 field_335.TextAlign = (ContentAlignment)32;
-                ((ToolStripItem)field_337).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+                ((ToolStripItem)field_337).Font = UiFonts.Create(9f, (FontStyle)1);
                 ((ToolStripItem)field_337).ForeColor = Color.FromArgb(192, 0, 0);
                 ((ToolStripItem)field_337).Name = "tsmi_updates";
                 ((ToolStripItem)field_337).Size = new Size(241, 24);

@@ -1,7 +1,20 @@
-# AmaanWRT 8.1 — تقرير الاستعادة النهائي (2026-11-12)
+# AmaanWRT 8.1 — تقرير الاستعادة النهائي (2026-11-12) — محدّث بالإصدار 8.1.1
 
 ## الملخص التنفيذي
 تمت استعادة الشيفرة المصدرية الكاملة للبرنامج **AmaanWRT 8.1** من الملف التنفيذي المُشوَّش `AmaanWRT.exe`، وأعيد بناؤها كمشروع C# كامل قابل للترجمة (تحقّق فعليًا: `dotnet build` اكتمل بـ **0 أخطاء**). وبناءً على طلب المالك: **أُزيلت آلية الترخيص والتفعيل بالكامل** — البرنامج يعمل الآن كنسخة كاملة مباشرة دون أي بوابة تجربة أو تفعيل.
+
+## تحسينات الإصدار 8.1.1 (الخطوط العربية والنسخة)
+| التحسين | التفاصيل |
+|---|---|
+| ترقية الإصدار | 8.1.0.0 ← **8.1.1.0**، وشارة العنوان "AmaanWRT v8" ← "AmaanWRT v8.1.1" |
+| توحيد الخط العربي | صنف جديد `Core/UiFonts.cs` — يستبدل 165 استدعاءً ثابتاً لـ Tahoma/Arial/Segoe UI بخط عربي موحّد يُحَلّ عند الإقلاع (Segoe UI أولاً — أفضل خط واجهات عربي مضمّن في ويندوز) |
+| رفع الأحجام الصغيرة | 6pt ← 8pt، 7pt/7.5pt ← 8.5pt — النص العربي يحتاج حجماً أكبر من اللاتيني ليُقرأ بوضوح |
+| خط الطرفية | مخرجات الأوامر (richTextBoxAns) بخط أحادي المسافة (Cascadia Mono ← Consolas ← Courier New) — محاذاة وتنسيق أفضل للمخرجات |
+| وعي دقة العرض | `app.manifest` جديد (DPI-aware): نص عربي حاد على شاشات 125%/150% بدل صورة مموّهة ممدودة |
+| اتجاه النافذة "حول" | AboutForm: عنوان عربي "حول البرنامج" + RightToLeft=Yes (دون RightToLeftLayout حفاظاً على صورة الخلفية من الانعكاس) |
+| عنوان الطرفية | "Terminal" ← "الطرفية (Terminal)" |
+
+تحقق ما بعد البناء: 0 أخطاء — 0 بقايا "Tahoma" داخل التنفيذي — manifest الـ DPI مضمّن — الإصدار 8.1.1.0 مؤكّد.
 
 ## المنهجية (خط الإنتاج المُستخدم)
 | المرحلة | الأداة | النتيجة |
@@ -21,17 +34,19 @@ AmaanWRT-Recovered/
 ├── libs/                      Guna.UI 1.9.0.1, Newtonsoft.Json 13, Renci.SshNet 2024,
 │                              MndpTray.Protocol 2.2.0, System.Collections
 └── AmaanWRT/
-    ├── AmaanWRT.csproj        (net462 / WinForms / x86)
+    ├── AmaanWRT.csproj        (net462 / WinForms / x86 / DPI-aware manifest)
+    ├── app.manifest            وعي دقة العرض + توافق إصدارات ويندوز
     ├── Program.cs             نقطة الدخول (تشغيل مباشر للنافذة الرئيسية — لا بوابة تفعيل)
     ├── Forms/                 AboutForm, MainForm, TemplateForm,
     │                          IpInstallerForm, ScreenshotMessageForm, UpgradePackagesForm
     ├── Core/                  AmaanSshClient (أوامر uci/opkg), AmaanScpClient,
     │                          IniConfigFile (config.ini), CustomGunaTextBox,
     │                          MachineRegistryStore (تخزين عام — آخر مجلد)،
-    │                          Fnv1aHash (تجزئة عامة لتفريع الأوامر)
+    │                          Fnv1aHash (تجزئة عامة لتفريع الأوامر)،
+    │                          UiFonts (الخطوط العربية الموحّدة + خط الطرفية)
     ├── Resources/             ImageCache.cs + 7 ملفات .resources أصلية (حُذف مورد التفعيل)
     ├── Settings/AppSettings.cs
-    └── Properties/AssemblyInfo.cs (الإصدار 8.1.0.0 كما في الأصل)
+    └── Properties/AssemblyInfo.cs (الإصدار 8.1.1.0 — مرقّى من 8.1.0.0 الأصلي)
 ```
 
 ## مقارنة الأمانة مع الأصل
@@ -56,10 +71,11 @@ AmaanWRT-Recovered/
 7. قاعدة `DataMarker` في Fnv1aHash ← `private` (اتساق إمكانية الوصول).
 
 ## الاختبارات
-- ✅ ترجمة كاملة بلا أخطاء (net462 + WinForms على لينكس عبر EnableWindowsTargeting).
+- ✅ ترجمة كاملة بلا أخطاء (net462 + WinForms على لينكس عبر EnableWindowsTargeting) — أعيد التحقق بعد تحسينات 8.1.1.
 - ✅ تحقق بنيوي: الموارد السبعة المتبقية مضمنة بأسماء مطابقة لاستعلامات `ComponentResourceManager` الجديدة (حُذف مورد ActivationForm مع نافذته).
 - ✅ فحص نظافة: لا بقايا `TODO/XXX/NaN/undefined`، ولا أي استدعاء متبقٍ لصنف فك التشفير أو الترخيص/التفعيل.
 - ✅ تحقق إزالة التفعيل: 0 أخطاء بناء، و0 أثر لـ `ActivationForm` داخل التنفيذي المُنتَج.
+- ✅ تحقق الخطوط: 165 استدعاءً حُوّلت إلى `UiFonts`، 0 بقايا "Tahoma"، خط الطرفية أحادي المسافة.
 - ⚠️ **لم يُختبر هنا**: تشغيل واجهة Windows، اتصال SSH فعلي بجهاز OpenWrt، تثبيت الحزم — يتطلب جهاز Windows + راوتر Phicomm K2. **ملاحظة**: النافذة About تحصل على خلفيتها الأصلية (400KB من `AboutForm.resources`)، ومسألة `bin/4/dd.rsc` الحساسة بقيت دون نشر.
 
 ## ما الذي أُزيل بالضبط (إلغاء الترخيص والتفعيل)

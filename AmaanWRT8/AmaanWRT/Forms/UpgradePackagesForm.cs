@@ -746,7 +746,7 @@ public class UpgradePackagesForm : Form
 		((Control)field_527).TabIndex = 0;
 		((Control)field_527).Text = "تحديث النظام";
 		field_527.TextLocation = new Point(450, 8);
-		((Control)field_539).Font = new Font("Segoe UI", 8f);
+		((Control)field_539).Font = UiFonts.Create(8f);
 		((Control)field_539).ForeColor = Color.White;
 		((Control)field_539).Location = new Point(6, 1);
 		((Control)field_539).Margin = new Padding(2, 0, 2, 0);
@@ -755,7 +755,7 @@ public class UpgradePackagesForm : Form
 		((Control)field_539).TabIndex = 49;
 		((Control)field_539).Text = "-";
 		field_539.TextAlign = (ContentAlignment)64;
-		((Control)field_531).Font = new Font("Segoe UI", 8f);
+		((Control)field_531).Font = UiFonts.Create(8f);
 		((Control)field_531).ForeColor = Color.FromArgb(192, 0, 0);
 		((Control)field_531).Location = new Point(-1, 33);
 		((Control)field_531).Margin = new Padding(2, 0, 2, 0);
@@ -764,7 +764,7 @@ public class UpgradePackagesForm : Form
 		((Control)field_531).TabIndex = 48;
 		((Control)field_531).Text = "تنبيه :\r\nيرجى التأكد من تحديث الملف المناسب للجهاز وعدم اطفاء الجهاز أثناء التحديث حتى لايموت الجهاز اثناء العمليه.";
 		field_531.TextAlign = (ContentAlignment)16;
-		((Control)field_532).Font = new Font("Segoe UI", 9f);
+		((Control)field_532).Font = UiFonts.Create(9f);
 		((Control)field_532).ForeColor = Color.Black;
 		((Control)field_532).Location = new Point(6, 77);
 		((Control)field_532).Name = "Btn_BrowseFile";
@@ -780,7 +780,7 @@ public class UpgradePackagesForm : Form
 		field_528.BorderColor = Color.Black;
 		field_528.DialogResult = (DialogResult)0;
 		field_528.FocusedColor = Color.Empty;
-		((Control)field_528).Font = new Font("Segoe UI", 14f, (FontStyle)1);
+		((Control)field_528).Font = UiFonts.Create(14f, (FontStyle)1);
 		((Control)field_528).ForeColor = Color.White;
 		field_528.Image = (Image)(object)ImageCache.method_577();
 		field_528.ImageAlign = (HorizontalAlignment)2;
@@ -806,7 +806,7 @@ public class UpgradePackagesForm : Form
 		field_529.FocusedBaseColor = Color.White;
 		field_529.FocusedBorderColor = Color.FromArgb(100, 88, 255);
 		field_529.FocusedForeColor = SystemColors.ControlText;
-		((Control)field_529).Font = new Font("Segoe UI", 9f);
+		((Control)field_529).Font = UiFonts.Create(9f);
 		((Control)field_529).ForeColor = Color.Black;
 		((Control)field_529).Location = new Point(80, 77);
 		((Control)field_529).Name = "textBoxFilePath";
@@ -816,7 +816,7 @@ public class UpgradePackagesForm : Form
 		field_529.SelectedText = "";
 		((Control)field_529).Size = new Size(401, 26);
 		((Control)field_529).TabIndex = 4;
-		((Control)field_530).Font = new Font("Segoe UI", 8f);
+		((Control)field_530).Font = UiFonts.Create(8f);
 		((Control)field_530).ForeColor = Color.Black;
 		((Control)field_530).Location = new Point(477, 77);
 		((Control)field_530).Margin = new Padding(2, 0, 2, 0);
@@ -850,7 +850,7 @@ public class UpgradePackagesForm : Form
 		field_537.DialogResult = (DialogResult)0;
 		((Control)field_537).Enabled = false;
 		field_537.FocusedColor = Color.Empty;
-		((Control)field_537).Font = new Font("Segoe UI", 9f);
+		((Control)field_537).Font = UiFonts.Create(9f);
 		((Control)field_537).ForeColor = Color.White;
 		field_537.Image = (Image)(object)ImageCache.method_597();
 		field_537.ImageAlign = (HorizontalAlignment)2;
@@ -875,7 +875,7 @@ public class UpgradePackagesForm : Form
 		field_538.BorderColor = Color.Black;
 		field_538.DialogResult = (DialogResult)0;
 		field_538.FocusedColor = Color.Empty;
-		((Control)field_538).Font = new Font("Segoe UI", 9f);
+		((Control)field_538).Font = UiFonts.Create(9f);
 		((Control)field_538).ForeColor = Color.White;
 		field_538.Image = (Image)(object)ImageCache.method_597();
 		field_538.ImageAlign = (HorizontalAlignment)2;
@@ -900,7 +900,7 @@ public class UpgradePackagesForm : Form
 		field_534.BorderColor = Color.Black;
 		field_534.DialogResult = (DialogResult)0;
 		field_534.FocusedColor = Color.Empty;
-		((Control)field_534).Font = new Font("Segoe UI", 9f);
+		((Control)field_534).Font = UiFonts.Create(9f);
 		((Control)field_534).ForeColor = Color.White;
 		field_534.Image = (Image)(object)ImageCache.method_597();
 		field_534.ImageAlign = (HorizontalAlignment)2;
@@ -934,7 +934,7 @@ public class UpgradePackagesForm : Form
 		field_536.BorderColor = Color.Black;
 		field_536.DialogResult = (DialogResult)0;
 		field_536.FocusedColor = Color.Empty;
-		((Control)field_536).Font = new Font("Segoe UI", 9f);
+		((Control)field_536).Font = UiFonts.Create(9f);
 		((Control)field_536).ForeColor = Color.White;
 		field_536.Image = (Image)(object)ImageCache.method_597();
 		field_536.ImageAlign = (HorizontalAlignment)2;
@@ -954,7 +954,7 @@ public class UpgradePackagesForm : Form
 		((Control)field_536).Click += method_561;
 		((Control)field_540).Anchor = (AnchorStyles)6;
 		((Control)field_540).BackColor = SystemColors.Control;
-		((Control)field_540).Font = new Font("Tahoma", 9f);
+		((Control)field_540).Font = UiFonts.Create(9f);
 		((Control)field_540).ForeColor = Color.Black;
 		((Control)field_540).Location = new Point(0, 276);
 		((Control)field_540).Margin = new Padding(2, 0, 2, 0);
@@ -995,7 +995,7 @@ public class UpgradePackagesForm : Form
 		field_542.TextLocation = new Point(450, 8);
 		((Control)field_542).Visible = false;
 		((Control)field_544).AutoSize = true;
-		((Control)field_544).Font = new Font("Segoe UI", 8f);
+		((Control)field_544).Font = UiFonts.Create(8f);
 		((Control)field_544).ForeColor = Color.Black;
 		((Control)field_544).Location = new Point(135, 47);
 		((Control)field_544).Margin = new Padding(2, 0, 2, 0);
@@ -1005,7 +1005,7 @@ public class UpgradePackagesForm : Form
 		((Control)field_544).Text = "كلمة المرور";
 		field_544.TextAlign = (ContentAlignment)16;
 		((Control)field_545).AutoSize = true;
-		((Control)field_545).Font = new Font("Segoe UI", 8f);
+		((Control)field_545).Font = UiFonts.Create(8f);
 		((Control)field_545).ForeColor = Color.Black;
 		((Control)field_545).Location = new Point(294, 47);
 		((Control)field_545).Margin = new Padding(2, 0, 2, 0);
@@ -1015,7 +1015,7 @@ public class UpgradePackagesForm : Form
 		((Control)field_545).Text = "المستخدم";
 		field_545.TextAlign = (ContentAlignment)16;
 		((Control)field_546).AutoSize = true;
-		((Control)field_546).Font = new Font("Segoe UI", 8f);
+		((Control)field_546).Font = UiFonts.Create(8f);
 		((Control)field_546).ForeColor = Color.Black;
 		((Control)field_546).Location = new Point(481, 47);
 		((Control)field_546).Margin = new Padding(2, 0, 2, 0);
@@ -1039,7 +1039,7 @@ public class UpgradePackagesForm : Form
 		field_547.FocusedBaseColor = Color.White;
 		field_547.FocusedBorderColor = Color.FromArgb(100, 88, 255);
 		field_547.FocusedForeColor = SystemColors.ControlText;
-		((Control)field_547).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+		((Control)field_547).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_547).ForeColor = Color.Black;
 		((Control)field_547).Location = new Point(352, 40);
 		((Control)field_547).Name = "textBoxIP";
@@ -1056,7 +1056,7 @@ public class UpgradePackagesForm : Form
 		field_548.FocusedBaseColor = Color.White;
 		field_548.FocusedBorderColor = Color.FromArgb(100, 88, 255);
 		field_548.FocusedForeColor = SystemColors.ControlText;
-		((Control)field_548).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+		((Control)field_548).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_548).ForeColor = Color.Black;
 		((Control)field_548).Location = new Point(29, 40);
 		((Control)field_548).Name = "textBoxPwd";
@@ -1072,7 +1072,7 @@ public class UpgradePackagesForm : Form
 		field_549.FocusedBaseColor = Color.White;
 		field_549.FocusedBorderColor = Color.FromArgb(100, 88, 255);
 		field_549.FocusedForeColor = SystemColors.ControlText;
-		((Control)field_549).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+		((Control)field_549).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_549).ForeColor = Color.Black;
 		((Control)field_549).Location = new Point(200, 40);
 		((Control)field_549).Name = "textBoxUsn";
@@ -1094,7 +1094,7 @@ public class UpgradePackagesForm : Form
 		field_550.CheckedChanged += method_567;
 		((Control)field_551).Anchor = (AnchorStyles)10;
 		((Control)field_551).AutoSize = true;
-		((Control)field_551).Font = new Font("Segoe UI", 9f);
+		((Control)field_551).Font = UiFonts.Create(9f);
 		((Control)field_551).ForeColor = Color.Maroon;
 		((Control)field_551).Location = new Point(20, 124);
 		((Control)field_551).Margin = new Padding(2, 0, 2, 0);

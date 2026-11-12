@@ -557,7 +557,7 @@ public class IpInstallerForm : Form
 		field_93.CheckedOffColor = Color.Gray;
 		field_93.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_93.FillColor = Color.White;
-		((Control)field_93).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_93).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_93).Location = new Point(158, 7);
 		((Control)field_93).Name = "cb_5GName";
 		((Control)field_93).RightToLeft = (RightToLeft)1;
@@ -569,7 +569,7 @@ public class IpInstallerForm : Form
 		field_94.CheckedOffColor = Color.Gray;
 		field_94.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_94.FillColor = Color.White;
-		((Control)field_94).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_94).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_94).Location = new Point(7, 36);
 		((Control)field_94).Name = "gunaCheckBox1";
 		((Control)field_94).RightToLeft = (RightToLeft)1;
@@ -581,7 +581,7 @@ public class IpInstallerForm : Form
 		field_95.CheckedOffColor = Color.Gray;
 		field_95.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_95.FillColor = Color.White;
-		((Control)field_95).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_95).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_95).Location = new Point(7, 65);
 		((Control)field_95).Name = "gunaCheckBox2";
 		((Control)field_95).RightToLeft = (RightToLeft)1;
@@ -593,7 +593,7 @@ public class IpInstallerForm : Form
 		field_96.CheckedOffColor = Color.Gray;
 		field_96.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_96.FillColor = Color.White;
-		((Control)field_96).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_96).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_96).Location = new Point(158, 65);
 		((Control)field_96).Name = "gunaCheckBox3";
 		((Control)field_96).RightToLeft = (RightToLeft)1;
@@ -605,7 +605,7 @@ public class IpInstallerForm : Form
 		field_97.CheckedOffColor = Color.Gray;
 		field_97.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_97.FillColor = Color.White;
-		((Control)field_97).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_97).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_97).Location = new Point(7, 94);
 		((Control)field_97).Name = "gunaCheckBox4";
 		((Control)field_97).RightToLeft = (RightToLeft)1;
@@ -617,7 +617,7 @@ public class IpInstallerForm : Form
 		field_98.CheckedOffColor = Color.Gray;
 		field_98.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_98.FillColor = Color.White;
-		((Control)field_98).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_98).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_98).Location = new Point(7, 7);
 		((Control)field_98).Name = "gunaCheckBox5";
 		((Control)field_98).RightToLeft = (RightToLeft)1;
@@ -629,7 +629,7 @@ public class IpInstallerForm : Form
 		field_99.CheckedOffColor = Color.Gray;
 		field_99.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_99.FillColor = Color.White;
-		((Control)field_99).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_99).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_99).Location = new Point(158, 94);
 		((Control)field_99).Name = "gunaCheckBox6";
 		((Control)field_99).RightToLeft = (RightToLeft)1;
@@ -641,7 +641,7 @@ public class IpInstallerForm : Form
 		field_100.CheckedOffColor = Color.Gray;
 		field_100.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_100.FillColor = Color.White;
-		((Control)field_100).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_100).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_100).Location = new Point(7, 123);
 		((Control)field_100).Name = "gunaCheckBox7";
 		((Control)field_100).RightToLeft = (RightToLeft)1;
@@ -653,7 +653,7 @@ public class IpInstallerForm : Form
 		field_101.CheckedOffColor = Color.Gray;
 		field_101.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_101.FillColor = Color.White;
-		((Control)field_101).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_101).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_101).Location = new Point(158, 36);
 		((Control)field_101).Name = "gunaCheckBox8";
 		((Control)field_101).RightToLeft = (RightToLeft)1;
@@ -665,7 +665,7 @@ public class IpInstallerForm : Form
 		field_102.CheckedOffColor = Color.Gray;
 		field_102.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_102.FillColor = Color.White;
-		((Control)field_102).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_102).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_102).Location = new Point(158, 123);
 		((Control)field_102).Name = "gunaCheckBox9";
 		((Control)field_102).RightToLeft = (RightToLeft)1;
@@ -677,7 +677,7 @@ public class IpInstallerForm : Form
 		field_103.CheckedOffColor = Color.Gray;
 		field_103.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_103.FillColor = Color.White;
-		((Control)field_103).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_103).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_103).Location = new Point(7, 149);
 		((Control)field_103).Name = "gunaCheckBox10";
 		((Control)field_103).RightToLeft = (RightToLeft)1;
@@ -689,14 +689,14 @@ public class IpInstallerForm : Form
 		field_104.CheckedOffColor = Color.Gray;
 		field_104.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_104.FillColor = Color.White;
-		((Control)field_104).Font = new Font("Arial", 9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
+		((Control)field_104).Font = UiFonts.Create(9f, (FontStyle)1, (GraphicsUnit)3, (byte)0);
 		((Control)field_104).Location = new Point(158, 149);
 		((Control)field_104).Name = "gunaCheckBox11";
 		((Control)field_104).RightToLeft = (RightToLeft)1;
 		((Control)field_104).Size = new Size(114, 23);
 		((Control)field_104).TabIndex = 45;
 		((Control)field_104).Text = "172.16.0.222";
-		((Control)field_105).Font = new Font("Tahoma", 10f);
+		((Control)field_105).Font = UiFonts.Create(10f);
 		((Control)field_105).Location = new Point(22, 311);
 		((Control)field_105).Name = "TB1";
 		((Control)field_105).RightToLeft = (RightToLeft)0;
@@ -707,7 +707,7 @@ public class IpInstallerForm : Form
 		field_106.CheckedOffColor = Color.Gray;
 		field_106.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_106.FillColor = Color.White;
-		((Control)field_106).Font = new Font("Segoe UI", 11f);
+		((Control)field_106).Font = UiFonts.Create(11f);
 		((Control)field_106).Location = new Point(132, 313);
 		((Control)field_106).Name = "CB_other1";
 		((Control)field_106).RightToLeft = (RightToLeft)1;
@@ -717,13 +717,13 @@ public class IpInstallerForm : Form
 		field_107.CheckedOffColor = Color.Gray;
 		field_107.CheckedOnColor = Color.FromArgb(64, 0, 0);
 		field_107.FillColor = Color.White;
-		((Control)field_107).Font = new Font("Segoe UI", 11f);
+		((Control)field_107).Font = UiFonts.Create(11f);
 		((Control)field_107).Location = new Point(283, 313);
 		((Control)field_107).Name = "CB_other2";
 		((Control)field_107).RightToLeft = (RightToLeft)1;
 		((Control)field_107).Size = new Size(20, 20);
 		((Control)field_107).TabIndex = 50;
-		((Control)field_108).Font = new Font("Tahoma", 10f);
+		((Control)field_108).Font = UiFonts.Create(10f);
 		((Control)field_108).Location = new Point(173, 311);
 		((Control)field_108).Name = "TB2";
 		((Control)field_108).RightToLeft = (RightToLeft)0;
@@ -738,7 +738,7 @@ public class IpInstallerForm : Form
 		field_109.BorderColor = Color.Black;
 		field_109.DialogResult = (DialogResult)0;
 		field_109.FocusedColor = Color.Empty;
-		((Control)field_109).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+		((Control)field_109).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_109).ForeColor = Color.White;
 		field_109.Image = (Image)(object)ImageCache.method_605();
 		field_109.ImageAlign = (HorizontalAlignment)2;
@@ -767,7 +767,7 @@ public class IpInstallerForm : Form
 		field_110.BorderColor = Color.Black;
 		field_110.DialogResult = (DialogResult)0;
 		field_110.FocusedColor = Color.Empty;
-		((Control)field_110).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+		((Control)field_110).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_110).ForeColor = Color.White;
 		field_110.Image = (Image)(object)ImageCache.method_605();
 		field_110.ImageAlign = (HorizontalAlignment)2;
@@ -801,13 +801,13 @@ public class IpInstallerForm : Form
 		((Control)field_111).Controls.Add((Control)(object)field_103);
 		((Control)field_111).Controls.Add((Control)(object)field_101);
 		((Control)field_111).Controls.Add((Control)(object)field_102);
-		((Control)field_111).Font = new Font("Tahoma", 8f);
+		((Control)field_111).Font = UiFonts.Create(8f);
 		((Control)field_111).Location = new Point(10, 128);
 		((Control)field_111).Name = "panel1";
 		((Control)field_111).Size = new Size(300, 179);
 		((Control)field_111).TabIndex = 53;
 		((Control)field_112).AutoSize = true;
-		((Control)field_112).Font = new Font("Segoe UI", 9f);
+		((Control)field_112).Font = UiFonts.Create(9f);
 		((Control)field_112).Location = new Point(11, 110);
 		((Control)field_112).Margin = new Padding(2, 0, 2, 0);
 		((Control)field_112).Name = "label10";
@@ -816,7 +816,7 @@ public class IpInstallerForm : Form
 		((Control)field_112).Text = "قم بتحديد الرنجات المراد تثبيتها :";
 		field_112.TextAlign = (ContentAlignment)64;
 		((Control)field_113).BackColor = Color.Black;
-		((Control)field_113).Font = new Font("Tahoma", 7f, (FontStyle)1);
+		((Control)field_113).Font = UiFonts.Create(8.5f, (FontStyle)1);
 		((Control)field_113).ForeColor = Color.White;
 		((Control)field_113).Location = new Point(0, 6);
 		((Control)field_113).Margin = new Padding(2, 0, 2, 0);
@@ -834,7 +834,7 @@ public class IpInstallerForm : Form
 		((ComboBox)field_114).DrawMode = (DrawMode)1;
 		((ComboBox)field_114).DropDownStyle = (ComboBoxStyle)2;
 		field_114.FocusedColor = Color.Empty;
-		((Control)field_114).Font = new Font("Segoe UI", 10f);
+		((Control)field_114).Font = UiFonts.Create(10f);
 		((Control)field_114).ForeColor = Color.Black;
 		((ListControl)field_114).FormattingEnabled = true;
 		((Control)field_114).Location = new Point(10, 53);
@@ -846,7 +846,7 @@ public class IpInstallerForm : Form
 		((Control)field_114).TabIndex = 56;
 		((ComboBox)field_114).SelectedIndexChanged += method_130;
 		((Control)field_115).Anchor = (AnchorStyles)13;
-		((Control)field_115).Font = new Font("Segoe UI", 9f);
+		((Control)field_115).Font = UiFonts.Create(9f);
 		((Control)field_115).ForeColor = Color.Gray;
 		((Control)field_115).Location = new Point(11, 82);
 		((Control)field_115).Margin = new Padding(2, 0, 2, 0);
@@ -869,7 +869,7 @@ public class IpInstallerForm : Form
 		((Control)field_116).Size = new Size(25, 25);
 		((Control)field_116).TabIndex = 58;
 		((Control)field_117).AutoSize = true;
-		((Control)field_117).Font = new Font("Segoe UI", 9f);
+		((Control)field_117).Font = UiFonts.Create(9f);
 		((Control)field_117).Location = new Point(11, 35);
 		((Control)field_117).Margin = new Padding(2, 0, 2, 0);
 		((Control)field_117).Name = "label2";

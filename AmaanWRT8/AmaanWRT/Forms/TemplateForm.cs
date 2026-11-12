@@ -141,7 +141,7 @@ public class TemplateForm : Form
 		field_79 = new GunaTextBox();
 		((Control)this).SuspendLayout();
 		field_74.DialogResult = (DialogResult)6;
-		((Control)field_74).Font = new Font("Tahoma", 10f, (FontStyle)1);
+		((Control)field_74).Font = UiFonts.Create(10f, (FontStyle)1);
 		((Control)field_74).Location = new Point(15, 81);
 		((Control)field_74).Name = "Btn_save";
 		((Control)field_74).Size = new Size(102, 31);
@@ -155,7 +155,7 @@ public class TemplateForm : Form
 		((ComboBox)field_75).DrawMode = (DrawMode)1;
 		((ComboBox)field_75).DropDownStyle = (ComboBoxStyle)2;
 		field_75.FocusedColor = Color.Empty;
-		((Control)field_75).Font = new Font("Segoe UI", 10f);
+		((Control)field_75).Font = UiFonts.Create(10f);
 		((Control)field_75).ForeColor = Color.Black;
 		((ListControl)field_75).FormattingEnabled = true;
 		((Control)field_75).Location = new Point(12, 39);
@@ -166,7 +166,7 @@ public class TemplateForm : Form
 		((Control)field_75).Size = new Size(246, 26);
 		((Control)field_75).TabIndex = 15;
 		field_76.DialogResult = (DialogResult)2;
-		((Control)field_76).Font = new Font("Tahoma", 10f, (FontStyle)1);
+		((Control)field_76).Font = UiFonts.Create(10f, (FontStyle)1);
 		((Control)field_76).Location = new Point(152, 81);
 		((Control)field_76).Name = "Btn_Cancel";
 		((Control)field_76).Size = new Size(103, 31);
@@ -175,7 +175,7 @@ public class TemplateForm : Form
 		((ButtonBase)field_76).UseVisualStyleBackColor = true;
 		((Control)field_77).AutoSize = true;
 		field_77.Checked = true;
-		((Control)field_77).Font = new Font("Tahoma", 9f, (FontStyle)1);
+		((Control)field_77).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_77).ForeColor = Color.Black;
 		((Control)field_77).Location = new Point(15, 15);
 		((Control)field_77).Name = "RB_current";
@@ -188,7 +188,7 @@ public class TemplateForm : Form
 		((ButtonBase)field_77).UseVisualStyleBackColor = true;
 		field_77.CheckedChanged += method_82;
 		((Control)field_78).AutoSize = true;
-		((Control)field_78).Font = new Font("Tahoma", 9f, (FontStyle)1);
+		((Control)field_78).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_78).ForeColor = Color.Black;
 		((Control)field_78).Location = new Point(152, 15);
 		((Control)field_78).Name = "RB_New";
@@ -207,7 +207,7 @@ public class TemplateForm : Form
 		field_79.FocusedBaseColor = SystemColors.Window;
 		field_79.FocusedBorderColor = Color.FromArgb(100, 88, 255);
 		field_79.FocusedForeColor = SystemColors.ControlText;
-		((Control)field_79).Font = new Font("Segoe UI", 9f, (FontStyle)1);
+		((Control)field_79).Font = UiFonts.Create(9f, (FontStyle)1);
 		((Control)field_79).ForeColor = Color.Black;
 		((Control)field_79).Location = new Point(15, 39);
 		((Control)field_79).Name = "TBox_TemplateName";
