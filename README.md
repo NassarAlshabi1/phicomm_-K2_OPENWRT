@@ -11,25 +11,25 @@ Custom OpenWrt firmware for the **Phicomm K2 (MediaTek MT7620A)** router, built 
 
 All builds are available on the [Releases](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases) page.
 
-### Current build — v22.5 Mesh Node (Floor1) — BATMAN_V
+### Current build — v22.4 Mesh Node (Floor1) — OpenWrt 23.05.6, BATMAN_V
 
 | Item | Details |
 | --- | --- |
-| Device profile | Phicomm K2 **v22.5 and newer** |
+| Device profile | Phicomm K2 **v22.4 and older** |
 | Target / SoC | ramips / MediaTek MT7620A @ 580 MHz |
-| OpenWrt version | 24.10 (r29306-34fa4b1af5), Linux 6.6 |
-| Mesh | batman-adv 2024.3 — **BATMAN_V + BLA + DAT + multicast**, 802.11s on **5GHz channel 44 / VHT80**, WPA3-SAE, mesh ID `M87986` |
+| OpenWrt version | **23.05.6** — built from the official `v23.05.6` release tag (release commit `761ee326`, feeds pinned to the exact release commits), Linux 5.15.189 |
+| Mesh | batman-adv 2023.1 — **BATMAN_V + BLA + DAT + multicast**, 802.11s on **5GHz channel 44 / VHT80**, WPA3-SAE, mesh ID `M87986` |
 | Client APs | `✨ADEN-NET✨-5G` (5GHz) + `✨ADEN-NET✨-4G` (2.4GHz, ch6/HT20) — open, client isolation, 802.11k/v |
 | Management IP | `10.0.0.8/16`, gateway `10.0.0.1` (DHCP off — the MikroTik gateway serves the network) |
 | Extras | STP on `br-lan`, scheduled reboot every 6 hours, hostname `Floor1` |
-| File | `openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin` (6.56 MB / 6,882,092 bytes) |
-| SHA256 | `32d5b6d1853cb75a1734751e75736ffd8a2813e644037a1e3be373bbdd1e1828` |
+| File | `openwrt-ramips-mt7620-phicomm_k2-v22.4-squashfs-sysupgrade.bin` (6.00 MB / 6,292,301 bytes) |
+| SHA256 | `db6e11137d95aa97e7953b84d6aa04922216397044007301d92f714ad9194f9a` |
 
-**Direct download:** [`openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/download/2026.11.12-0441/openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin)
+**Direct download:** [`openwrt-ramips-mt7620-phicomm_k2-v22.4-squashfs-sysupgrade.bin`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/download/v22.4-ow23.05.6-2026.11.12-0756/openwrt-ramips-mt7620-phicomm_k2-v22.4-squashfs-sysupgrade.bin)
 
 An `initramfs-kernel.bin` image is attached to the same release for a **temporary test boot** (nothing is written to flash).
 
-Included packages: LuCI, `kmod-batman-adv` (BATMAN_V/BLA/DAT/MCAST), `batctl`, `wpad-mesh-mbedtls`, `iw`.
+Included packages: LuCI, `kmod-batman-adv` 2023.1 (BATMAN_V/BLA/DAT/MCAST), `batctl-default`, `wpad-mesh-mbedtls`, `iw`, `kmod-mt76x2` (5GHz radio), `kmod-rt2800-soc` (2.4GHz radio).
 
 On **first boot** the firmware automatically applies [`files/etc/uci-defaults/99-floor1-firstboot`](files/etc/uci-defaults/99-floor1-firstboot) (based on the owner's `firstboot-phicomm-k2.sh`):
 
@@ -48,12 +48,20 @@ On **first boot** the firmware automatically applies [`files/etc/uci-defaults/99
 > - **BATMAN_V must match on every mesh node**, including the MikroTik gateway — nodes running BATMAN_IV will not peer with it.
 > - The client APs are intentionally open (`encryption none`) with client isolation — anyone in range can associate.
 
-> ⚠️ **Hardware version warning:** this image is for K2 **v22.5 and newer** hardware. Flashing it on v22.4 or older hardware can **brick** the router (different flash layout). Check the version sticker on the bottom of the router before flashing.
+> ⚠️ **Hardware version warning:** this image is for K2 **v22.4 and older** hardware (flash layout `IMAGE_SIZE 7872k`). Flashing it on **v22.5 or newer** hardware can **brick** the router. Check the version sticker on the bottom of the router before flashing — the matching image for v22.5+ hardware is in the next section.
+
+> ℹ️ **Two nodes in the same mesh:** this image and the v22.5 image below both default to management IP `10.0.0.8` (the first-boot script marks it *CHANGE PER DEVICE*). If both routers run at the same time, change the IP on one of them after first boot: `uci set network.lan.ipaddr='10.0.0.9' && uci commit network`.
+
+> ℹ️ **About the version label:** a git-based build of the `v23.05.6` tag labels itself `r24232-539228933c` — that is `scripts/getver.sh` behaviour for tag checkouts (`r24232` is the 23.05.6 revision number). The build was verified to use the exact release commit `761ee326` and the release-pinned feeds.
+
+### Also available — v22.5 Mesh Node (Floor1) — OpenWrt 24.10, BATMAN_V
+
+For K2 **v22.5 and newer** hardware: release [`2026.11.12-0441`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/tag/2026.11.12-0441) — the identical Floor1 mesh configuration (BATMAN_V, 802.11s on 5GHz ch44/VHT80 with WPA3-SAE, Aden-Net APs, `10.0.0.8/16`) built on OpenWrt 24.10 (Linux 6.6, batman-adv 2024.3, `r29306-34fa4b1af5`). File `openwrt-ramips-mt7620-phicomm_k2-v22.5-squashfs-sysupgrade.bin` (6,882,092 bytes), SHA256 `32d5b6d1853cb75a1734751e75736ffd8a2813e644037a1e3be373bbdd1e1828`. Both builds speak the same batman-adv compat level and will mesh with each other and with the MikroTik gateway.
 
 ### Superseded builds
 
-- [`2026.11.10-0914`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/tag/2026.11.10-0914) — same device, BATMAN_IV mesh on 2.4GHz, no client APs, management IP `10.0.0.245`. Replaced by the build above.
-- [`v22.4-AMMAN`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/tag/v22.4-AMMAN) — OpenWrt 23.05.0A for K2 **v22.4 and older**, no mesh (sha256 `25e35108910a9d98707af35e105dfc636346d66839e50318122c6d358373a2df`). Also stored in the [`firmware/`](firmware/) directory.
+- [`2026.11.10-0914`](https://github.com/NassarAlshabi1/phicomm_-K2_OPENWRT/releases/tag/2026.11.10-0914) — v22.5, BATMAN_IV mesh on 2.4GHz, no client APs, management IP `10.0.0.245`. Replaced by the v22.5 build above.
+- `v22.4-AMMAN` — OpenWrt 23.05.0A for K2 **v22.4 and older**, no mesh (sha256 `25e35108910a9d98707af35e105dfc636346d66839e50318122c6d358373a2df`). The release was removed automatically by the keep-3-releases policy; the firmware file is preserved in the [`firmware/`](firmware/) directory.
 
 ## ⚡ Installation
 
