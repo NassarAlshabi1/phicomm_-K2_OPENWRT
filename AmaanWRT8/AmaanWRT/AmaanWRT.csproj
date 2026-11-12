@@ -1,0 +1,56 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net462</TargetFramework>
+    <OutputType>WinExe</OutputType>
+    <UseWindowsForms>true</UseWindowsForms>
+    <EnableWindowsTargeting>true</EnableWindowsTargeting>
+    <AssemblyName>AmaanWRT</AssemblyName>
+    <RootNamespace>AmaanWRT</RootNamespace>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <LangVersion>11.0</LangVersion>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+    <ApplicationIcon>app.ico</ApplicationIcon>
+    <PlatformTarget>x86</PlatformTarget>
+    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+    <EnableDefaultEmbeddedResourceItems>false</EnableDefaultEmbeddedResourceItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="All" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Guna.UI"><HintPath>..\libs\Guna.UI.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="Renci.SshNet"><HintPath>..\libs\Renci.SshNet.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="Newtonsoft.Json"><HintPath>..\libs\Newtonsoft.Json.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="MndpTray.Protocol"><HintPath>..\libs\MndpTray.Protocol.dll</HintPath><Private>true</Private></Reference>
+    <Reference Include="System.Management" />
+    <Reference Include="Microsoft.CSharp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resources\AboutForm.resources">
+      <LogicalName>AmaanWRT.AboutForm.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\TemplateForm.resources">
+      <LogicalName>AmaanWRT.TemplateForm.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\IpInstallerForm.resources">
+      <LogicalName>AmaanWRT.IpInstallerForm.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\MainForm.resources">
+      <LogicalName>AmaanWRT.MainForm.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ImageCache.resources">
+      <LogicalName>AmaanWRT.ImageCache.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\ScreenshotMessageForm.resources">
+      <LogicalName>AmaanWRT.ScreenshotMessageForm.resources</LogicalName>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\UpgradePackagesForm.resources">
+      <LogicalName>AmaanWRT.UpgradePackagesForm.resources</LogicalName>
+    </EmbeddedResource>
+  </ItemGroup>
+
+</Project>
